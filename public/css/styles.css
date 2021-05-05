@@ -33,40 +33,49 @@ h1 {
   width: 1000px;
 }
 
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.continent-select {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #NA-select {
   width: 100px;
   height: 100px;
-  border: 2px solid navy;
   position: absolute;
   top: 260px;
-  left: 190px;
+  left: 150px;
 }
 
 #CA-select {
   width: 40px;
   height: 30px;
-  border: 2px solid cyan;
   position: absolute;
-  top: 380px;
-  left: 220px;
+  top: 400px;
+  left: 180px;
 }
 
 #CR-select {
   width: 70px;
   height: 40px;
-  border: 2px solid orange;
   position: absolute;
-  top: 370px;
-  left: 250px;
+  top: 377px;
+  left: 265px;
 }
 
 #SA-select {
   width: 60px;
   height: 100px;
-  border: 2px solid red;
   position: absolute;
-  top: 430px;
-  left: 290px;
+  top: 420px;
+  left: 300px;
 }
 
 #info-container {

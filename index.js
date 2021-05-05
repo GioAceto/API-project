@@ -1,7 +1,6 @@
 const express = require('express')
-const {
-  errorFunction
-} = require('./controllers/cont-data')
+const countries = require('./countries')
+const { errorFunction } = require('./controllers/cont-data')
 
 const PORT = 1400
 const app = express()
@@ -12,6 +11,10 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   res.render('index')
+})
+
+app.get('/north_america', (req, res) => {
+  res.render('north-america', { countries })
 })
 
 app.get('*', errorFunction)
