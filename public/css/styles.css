@@ -5,6 +5,11 @@
     sans-serif;
 }
 
+#body-container {
+  min-width: 800px;
+  margin: auto;
+}
+
 header {
   height: 4rem;
   background-color: black;
@@ -20,15 +25,52 @@ h1 {
 }
 
 #map-container {
-  display: flex;
-  justify-content: center;
+  width: 1000px;
 }
 
 #map {
-  max-width: 1000px;
+  margin-top: -4rem;
+  width: 1000px;
+}
+
+#NA-select {
+  width: 100px;
+  height: 100px;
+  border: 2px solid navy;
+  position: absolute;
+  top: 260px;
+  left: 190px;
+}
+
+#CA-select {
+  width: 40px;
+  height: 30px;
+  border: 2px solid cyan;
+  position: absolute;
+  top: 380px;
+  left: 220px;
+}
+
+#CR-select {
+  width: 70px;
+  height: 40px;
+  border: 2px solid orange;
+  position: absolute;
+  top: 370px;
+  left: 250px;
+}
+
+#SA-select {
+  width: 60px;
+  height: 100px;
+  border: 2px solid red;
+  position: absolute;
+  top: 430px;
+  left: 290px;
 }
 
 #info-container {
+  margin-top: -4rem;
   height: 20rem;
   background-color: black;
 }
