@@ -9,13 +9,26 @@ app.set('view engine', 'pug')
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
+app.get('/region', (req, res) => {
   res.render('index')
 })
 
-app.get('/north_america', (req, res) => {
-  res.render('north-america', { countries })
+app.get('/region/north_america', (req, res) => {
+  res.render('north_america', { countries })
 })
+
+app.get('/region/central_america', (req, res) => {
+  res.render('central_america', { countries })
+})
+
+app.get('/region/caribbean', (req, res) => {
+  res.render('caribbean', { countries })
+})
+
+app.get('/region/south_america', (req, res) => {
+  res.render('south_america', { countries })
+})
+
 
 app.get('*', errorFunction)
 

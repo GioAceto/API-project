@@ -25,6 +25,7 @@ h1 {
 }
 
 #map-container {
+  margin: auto;
   width: 1000px;
 }
 
@@ -39,6 +40,10 @@ a {
   font-weight: 400;
 }
 
+a:hover {
+  text-decoration: underline overline;
+}
+
 .continent-select {
   text-align: center;
   display: flex;
@@ -49,37 +54,37 @@ a {
 #NA-select {
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 260px;
+  position: relative;
+  top: -490px;
   left: 150px;
 }
 
 #CA-select {
   width: 40px;
   height: 30px;
-  position: absolute;
-  top: 400px;
+  position: relative;
+  top: -455px;
   left: 180px;
 }
 
 #CR-select {
   width: 70px;
   height: 40px;
-  position: absolute;
-  top: 377px;
+  position: relative;
+  top: -507px;
   left: 265px;
 }
 
 #SA-select {
   width: 60px;
   height: 100px;
-  position: absolute;
-  top: 420px;
+  position: relative;
+  top: -510px;
   left: 300px;
 }
 
 #info-container {
-  margin-top: -4rem;
+  margin-top: -25rem;
   height: 20rem;
   background-color: black;
 }
