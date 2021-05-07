@@ -92,6 +92,10 @@ table {
   margin: 2rem 0 0 2rem;
 }
 
+tr:nth-child(even) {
+  background-color: #EDEDED;
+}
+
 th {
   text-align: center;
   font-size: 24px;

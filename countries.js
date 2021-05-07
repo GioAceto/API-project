@@ -9,7 +9,7 @@ const countries = [{
   export: 'Refined Petroleum',
   currency: 'US Dollar',
   leader: 'Joe Biden',
-  flag: 'flag'
+  flag: '🇺🇸'
 },
 {
   name: 'Canada',
@@ -22,7 +22,7 @@ const countries = [{
   export: 'Crude Petroleum',
   currency: 'Canadian Dollar',
   leader: 'Justin Trudeau',
-  flag: 'flag'
+  flag: '🇨🇦'
 },
 {
   name: 'Mexico',
@@ -35,7 +35,7 @@ const countries = [{
   export: 'Automobiles',
   currency: 'Mexican Peso',
   leader: 'Andrés Manuel López Obrador',
-  flag: 'flag'
+  flag: '🇲🇽'
 }
 ]
 
