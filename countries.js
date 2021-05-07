@@ -8,7 +8,7 @@ const countries = [{
   gdp: '21.43T',
   export: 'Refined petroleum',
   currency: 'US dollar',
-  leader: 'Joe Biden',
+  leader: 'Joseph Biden',
   flag: '🇺🇸'
 },
 {
@@ -136,7 +136,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Passenger and cargo ships',
   currency: 'Eastern Caribbean dollar',
   leader: 'Gaston Browne',
   flag: '🇦🇬'
@@ -149,7 +149,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Passenger and cargo ships',
   currency: 'Bahamian dollar',
   leader: 'Hubert Minnis',
   flag: '🇧🇸'
@@ -162,7 +162,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Liquor',
   currency: 'Barbadian dollar',
   leader: 'Mia Mottley',
   flag: '🇧🇧'
@@ -175,7 +175,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Gold',
   currency: 'Dominican peso',
   leader: 'Luis Abinader',
   flag: '🇩🇴'
@@ -188,7 +188,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Clothing',
   currency: 'Haitian gourde',
   leader: 'Jovenel Moïse',
   flag: '🇭🇹'
@@ -201,7 +201,7 @@ const countries = [{
   area: 'Havana',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Rolled tobacco',
   currency: 'Cuban peso',
   leader: 'Miguel Díaz-Canel',
   flag: '🇨🇺'
@@ -214,7 +214,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Medical instruments',
   currency: 'Eastern Caribbean dollar',
   leader: 'Charles Savarin',
   flag: '🇩🇲'
@@ -227,7 +227,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Aluminum oxide',
   currency: 'Jamaican dollar',
   leader: 'Andrew Holness',
   flag: '🇯🇲'
@@ -240,7 +240,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Fish',
   currency: 'Eastern Caribbean dollar',
   leader: 'Keith Mitchell',
   flag: '🇬🇩'
@@ -253,7 +253,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Petroleum gas',
   currency: 'Trinidad and Tobago dollar',
   leader: 'Paula-Mae Weekes',
   flag: '🇹🇹'
@@ -266,7 +266,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Low-voltage protection equipment',
   currency: 'Eastern Caribbean dollar',
   leader: 'Timothy Sylvester Harris',
   flag: '🇰🇳'
@@ -279,7 +279,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Crude petroleum',
   currency: 'Eastern Caribbean dollar',
   leader: 'Allen Michael Chastanet',
   flag: '🇱🇨'
@@ -292,7 +292,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Petroleum gas',
   currency: 'Eastern Caribbean dollar',
   leader: 'Ralph Everard Gonsalves',
   flag: '🇻🇨'
@@ -305,7 +305,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Soybean meal',
   currency: 'Argentine peso',
   leader: 'Alberto Fernández',
   flag: '🇦🇷'
@@ -318,7 +318,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Petroleum gas',
   currency: 'Bolivian boliviano',
   leader: 'Luis Arce',
   flag: '🇧🇴'
@@ -331,7 +331,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Soybeans',
   currency: 'Brazilian real',
   leader: 'Jair Bolsonaro',
   flag: '🇧🇷'
@@ -344,7 +344,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Copper ore',
   currency: 'Chilean peso',
   leader: 'Sebastián Piñera',
   flag: '🇨🇱'
@@ -357,7 +357,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Crude petroleum',
   currency: 'Colombian peso',
   leader: 'Iván Duque Márquez',
   flag: '🇨🇴'
@@ -370,7 +370,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Crude petroleum',
   currency: 'US dollar',
   leader: 'Lenín Moreno',
   flag: '🇪🇨'
@@ -383,7 +383,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Special purpose ships',
   currency: 'Guyanese dollar',
   leader: 'Irfaan Ali',
   flag: '🇬🇾'
@@ -396,7 +396,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Soybeans',
   currency: 'Paraguayan guaraní',
   leader: 'Mario Abdo Benítez',
   flag: '🇵🇾'
@@ -409,7 +409,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Copper ore',
   currency: 'Nuevo sol',
   leader: 'Francisco Sagasti',
   flag: '🇵🇪'
@@ -422,7 +422,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Gold',
   currency: 'Surinamese dollar',
   leader: 'Chan Santokhi',
   flag: '🇸🇷'
@@ -435,7 +435,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Wood pulp',
   currency: 'Uruguayan peso',
   leader: 'Luis Lacalle Pou',
   flag: '🇺🇾'
@@ -448,7 +448,7 @@ const countries = [{
   area: 'Example',
   population: 'Example',
   gdp: 'Example',
-  export: 'Example',
+  export: 'Crude petroleum',
   currency: 'Bolívar soberano',
   leader: ['Nicolás Maduro', 'Juan Guaidó'],
   flag: '🇻🇪'
