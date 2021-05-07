@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #body-container {
@@ -85,6 +84,20 @@ a:hover {
 
 #info-container {
   margin-top: -25rem;
-  height: 20rem;
+  height: 40rem;
   background-color: black;
+}
+
+table {
+  margin: 2rem 0 0 2rem;
+}
+
+th {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 1rem;
+}
+
+td {
+  padding-bottom: 0.5rem;
 }
