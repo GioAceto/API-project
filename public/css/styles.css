@@ -115,7 +115,7 @@ opacity:1;
 
 #info-container {
   margin-top: -25rem;
-  height: 40rem;
+  height: auto;
   background-color: black;
 }
 
@@ -138,6 +138,9 @@ opacity:1;
 .doc-aside {
   padding-top: 2rem;
   width: 50%;
+  color: white;
+  letter-spacing: 0.08rem;;
+  font-weight: 300;
 }
 
 .doc-heading {
