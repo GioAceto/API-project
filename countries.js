@@ -137,8 +137,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Eastern Caribbean dollar',
+  leader: 'Gaston Browne',
   flag: '🇦🇬'
 },
 {
@@ -150,8 +150,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Bahamian dollar',
+  leader: 'Hubert Minnis',
   flag: '🇧🇸'
 },
 {
@@ -163,8 +163,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Barbadian dollar',
+  leader: 'Mia Mottley',
   flag: '🇧🇧'
 },
 {
@@ -176,8 +176,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Dominican peso',
+  leader: 'Luis Abinader',
   flag: '🇩🇴'
 },
 {
@@ -189,8 +189,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Haitian gourde',
+  leader: 'Jovenel Moïse',
   flag: '🇭🇹'
 },
 {
@@ -202,8 +202,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Cuban peso',
+  leader: 'Miguel Díaz-Canel',
   flag: '🇨🇺'
 },
 {
@@ -215,8 +215,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Eastern Caribbean dollar',
+  leader: 'Charles Savarin',
   flag: '🇩🇲'
 },
 {
@@ -228,8 +228,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Jamaican dollar',
+  leader: 'Andrew Holness',
   flag: '🇯🇲'
 },
 {
@@ -241,8 +241,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Eastern Caribbean dollar',
+  leader: 'Keith Mitchell',
   flag: '🇬🇩'
 },
 {
@@ -254,8 +254,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Trinidad and Tobago dollar',
+  leader: 'Paula-Mae Weekes',
   flag: '🇹🇹'
 },
 {
@@ -267,8 +267,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Eastern Caribbean dollar',
+  leader: 'Timothy Sylvester Harris',
   flag: '🇰🇳'
 },
 {
@@ -280,8 +280,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Eastern Caribbean dollar',
+  leader: 'Allen Michael Chastanet',
   flag: '🇱🇨'
 },
 {
@@ -293,8 +293,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Eastern Caribbean dollar',
+  leader: 'Ralph Everard Gonsalves',
   flag: '🇻🇨'
 },
 {
@@ -306,8 +306,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Argentine peso',
+  leader: 'Alberto Fernández',
   flag: '🇦🇷'
 },
 {
@@ -319,8 +319,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Bolivian boliviano',
+  leader: 'Luis Arce',
   flag: '🇧🇴'
 },
 {
@@ -332,8 +332,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Brazilian real',
+  leader: 'Jair Bolsonaro',
   flag: '🇧🇷'
 },
 {
@@ -345,8 +345,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Chilean peso',
+  leader: 'Sebastián Piñera',
   flag: '🇨🇱'
 },
 {
@@ -358,8 +358,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Colombian peso',
+  leader: 'Iván Duque Márquez',
   flag: '🇨🇴'
 },
 {
@@ -371,8 +371,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'US dollar',
+  leader: 'Lenín Moreno',
   flag: '🇪🇨'
 },
 {
@@ -384,8 +384,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Guyanese dollar',
+  leader: 'Irfaan Ali',
   flag: '🇬🇾'
 },
 {
@@ -397,8 +397,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Paraguayan guaraní',
+  leader: 'Mario Abdo Benítez',
   flag: '🇵🇾'
 },
 {
@@ -410,8 +410,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Nuevo sol',
+  leader: 'Francisco Sagasti',
   flag: '🇵🇪'
 },
 {
@@ -423,8 +423,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Surinamese dollar',
+  leader: 'Chan Santokhi',
   flag: '🇸🇷'
 },
 {
@@ -436,8 +436,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Uruguayan peso',
+  leader: 'Luis Lacalle Pou',
   flag: '🇺🇾'
 },
 {
@@ -449,8 +449,8 @@ const countries = [{
   population: 'Example',
   gdp: 'Example',
   export: 'Example',
-  currency: 'Example',
-  leader: 'Example',
+  currency: 'Bolívar soberano',
+  leader: ['Nicolás Maduro', 'Juan Guaidó'],
   flag: '🇻🇪'
 }
 ]
