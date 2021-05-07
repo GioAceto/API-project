@@ -89,7 +89,8 @@ a:hover {
 }
 
 table {
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 0 2rem 2rem;
+  width: 90%;
 }
 
 tr:nth-child(even) {
@@ -97,11 +98,16 @@ tr:nth-child(even) {
 }
 
 th {
+  padding: 1rem;
   text-align: center;
   font-size: 24px;
-  padding-bottom: 1rem;
 }
 
 td {
-  padding-bottom: 0.5rem;
+padding: 0.25rem;
+}
+
+td:first-child {
+  width: 25%;
+  font-weight: 500;
 }

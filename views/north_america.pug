@@ -16,7 +16,7 @@ html(lang="en")
         table
           for country in countries
             tr
-              th= country.name
+              th(colspan="2")= country.name
                 tr
                   td Capital:
                   td=country.capital
@@ -41,7 +41,7 @@ html(lang="en")
                 tr
                   td Currency:
                   td=country.currency
-                tr
+                tr(class="last")
                   td Flag:
                   td=country.flag
 
