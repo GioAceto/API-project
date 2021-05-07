@@ -299,7 +299,7 @@ const countries = [{
 },
 {
   name: 'Argentina',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Buenos Aires',
   city: 'Buenos Aires',
   area: '1,073,500',
@@ -312,7 +312,7 @@ const countries = [{
 },
 {
   name: 'Bolivia',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: ['La Paz', 'Sucre'],
   city: 'Santa Cruz de la Sierra',
   area: '424,164',
@@ -325,7 +325,7 @@ const countries = [{
 },
 {
   name: 'Brazil',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Brasilia',
   city: 'São Paulo',
   area: '3,287,956',
@@ -338,7 +338,7 @@ const countries = [{
 },
 {
   name: 'Chile',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Santiago',
   city: 'Santiago',
   area: '291,933',
@@ -364,7 +364,7 @@ const countries = [{
 },
 {
   name: 'Ecuador',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Quito',
   city: 'Guayaquil',
   area: '106,889',
@@ -390,7 +390,7 @@ const countries = [{
 },
 {
   name: 'Paraguay',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Asunción',
   city: 'Asunción',
   area: '157,048',
@@ -403,7 +403,7 @@ const countries = [{
 },
 {
   name: 'Peru',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Lima',
   city: 'Lima',
   area: '496,225',
@@ -429,7 +429,7 @@ const countries = [{
 },
 {
   name: 'Uruguay',
-  region: 'The Caribbean',
+  region: 'South America',
   capital: 'Montevideo',
   city: 'Montevideo',
   area: '68,037',
