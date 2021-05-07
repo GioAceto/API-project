@@ -36,8 +36,8 @@ h1 {
 a {
 	position:relative;
 	text-decoration: none;
-	color: #DC7676;
- 	transition:color .15s ease-in-out;
+	color: #FF4141;
+  transition:color .15s ease-in-out;
 }
 
 a:hover {
