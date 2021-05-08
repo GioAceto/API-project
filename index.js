@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/countries/', (req, res) => {
+  res.render('countries', { countries })
+})
+
 app.get('/countries/north_america', (req, res) => {
   res.render('north_america', { countries })
 })
