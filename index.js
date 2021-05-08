@@ -13,19 +13,19 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get('/north_america', (req, res) => {
+app.get('/countries/north_america', (req, res) => {
   res.render('north_america', { countries })
 })
 
-app.get('/central_america', (req, res) => {
+app.get('/countries/central_america', (req, res) => {
   res.render('central_america', { countries })
 })
 
-app.get('/caribbean', (req, res) => {
+app.get('/countries/caribbean', (req, res) => {
   res.render('caribbean', { countries })
 })
 
-app.get('/south_america', (req, res) => {
+app.get('/countries/south_america', (req, res) => {
   res.render('south_america', { countries })
 })
 
