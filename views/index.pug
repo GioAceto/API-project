@@ -40,29 +40,29 @@ html(lang="en")
             aside(class="doc-aside1")
               p(class="sub-heading response-heading") Response
               p [{
-              p name: 'Mexico',
-              p region: 'North America',
-              p capital: 'Mexico City',
-              p city: 'Mexico City',
-              p area: '761,606',
-              p population: '127.6M',
-              p gdp: '1.27T',
-              p export: 'Automobiles',
-              p currency: 'Mexican Peso,
-              p leader: 'Andrés Manuel López Obrador',
-              p flag: '🇲🇽'
+              p name: "Mexico",
+              p region: "North America",
+              p capital: "Mexico City",
+              p city: "Mexico City",
+              p area: "761,606",
+              p population: "127.6M",
+              p gdp: "1.27T",
+              p export: "Automobiles",
+              p currency: "Mexican Peso",
+              p leader: "Andrés Manuel López Obrador",
+              p flag: "🇲🇽"
               p }, {
-              p name: 'Chile',
-              p region: 'South America',
-              p capital: 'Santiago',
-              p city: 'Santiago',
-              p area: '291,933',
-              p population: '18.95M',
-              p gdp: '282.3B',
-              p export: 'Copper ore',
-              p currency: 'Chilean peso',
-              p leader: 'Sebastián Piñera',
-              p flag: '🇨🇱'
+              p name: "Chile",
+              p region: "South America",
+              p capital: "Santiago",
+              p city: "Santiago",
+              p area: "291,933",
+              p population: "18.95M",
+              p gdp: "282.3B",
+              p export: "Copper ore",
+              p currency: "Chilean peso",
+              p leader: "Sebastián Piñera",
+              p flag: "🇨🇱"
               p },
           article(class="documentation1")
             section(class="doc-section1")
@@ -75,29 +75,29 @@ html(lang="en")
             aside(class="doc-aside1")
               p(class="sub-heading response-heading") Response
               p [{
-              p name: 'The United States of America',
-              p region: 'North America',
-              p capital: 'Washington DC',
-              p city: 'New York City',
-              p area: '3,677,649',
-              p population: '328.2M',
-              p gdp: '21.43T',
-              p export: 'Refined petroleum',
-              p currency: 'US dollar,
-              p leader: 'Joseph Biden',
-              p flag: '🇺🇸'
+              p name: "The United States of America",
+              p region: "North America",
+              p capital: "Washington DC",
+              p city: "New York City",
+              p area: "3,677,649",
+              p population: "328.2M",
+              p gdp: "21.43T",
+              p export: "Refined petroleum",
+              p currency: "US dollar",
+              p leader: "Joseph Biden",
+              p flag: "🇺🇸"
               p }, {
-              p name: 'Canada',
-              p region: 'North America',
-              p capital: 'Ottawa',
-              p city: 'Toronto',
-              p area: '3,855,100',
-              p population: '37.59M',
-              p gdp: '1.74T',
-              p export: 'Crude petroleum',
-              p currency: 'Canadian dollar',
-              p leader: 'Justin Trudeau',
-              p flag: '🇨🇦'
+              p name: "Canada",
+              p region: "North America",
+              p capital: "Ottawa",
+              p city: "Toronto",
+              p area: "3,855,100",
+              p population: "37.59M",
+              p gdp: "1.74T",
+              p export: "Crude petroleum",
+              p currency: "Canadian dollar",
+              p leader: "Justin Trudeau",
+              p flag: "🇨🇦"
               p },
           article(class="documentation1")
             section(class="doc-section1")
@@ -105,22 +105,41 @@ html(lang="en")
               p(class="post") POST
               p(class="sub-heading") Route
               p http://localhost:1400/countries
+              p(class="sub-heading") Headers
+              p Content-Type: application/json
+              p(class="sub-heading") Body
+              div(id="post-req")
+                p {
+                p "name": "The Republic of Texas",
+                p "region": 'North America',
+                p "capital": "Austin",
+                p "city": "Houston",
+                p "area": "268,597",
+                p "population": "29M",
+                p "gdp": "1.9T",
+                p "export": "Petroleum oils",
+                p "currency": "US dollar",
+                p "leader": "Greg Abbott",
+                p "flag": "🏳️"
+                p }
               p(class="sub-heading") Description
               p Creates a new country from the data provided in the body
             aside(class="doc-aside1")
               p(class="sub-heading response-heading") Response
               p {
-              p name: 'The Republic of Texas',
-              p region: 'North America',
-              p capital: 'Austin',
-              p city: 'Houston',
-              p area: '268,597',
-              p population: '29M',
-              p gdp: '1.9T',
-              p export: 'Petroleum oils',
-              p currency: 'US dollar,
-              p leader: 'Greg Abbott',
-              p flag: '🏳️'
+                p "name": "The Republic of Texas",
+                p "region": 'North America',
+                p "capital": "Austin",
+                p "city": "Houston",
+                p "area": "268,597",
+                p "population": "29M",
+                p "gdp": "1.9T",
+                p "export": "Petroleum oils",
+                p "currency": "US dollar",
+                p "leader": "Greg Abbott",
+                p "flag": "🏳️"
+                p "CreatedAt": "2021-05-00T00:00:00.0000"
+                p "UpdatedAt": "2021-05-00T00:00:00.0000"
               p }
       footer
 
