@@ -114,18 +114,22 @@ opacity:1;
 }
 
 #info-container {
+  display: flex;
+  flex-direction: column;
   margin-top: -25rem;
   height: auto;
   background-color: black;
 }
 
-.documentation {
+.documentation1 {
+  display: flex;
+  flex-direction: row;
   margin: auto;
   width: 90%;
   display: flex;
 }
 
-.doc-section {
+.doc-section1 {
   width: 50%;
   padding-top: 2rem;
   display: flex;
@@ -135,10 +139,15 @@ opacity:1;
   font-weight: 300;
 }
 
-.doc-aside {
+.doc-section1 p:nth-child(even) {
+  margin-bottom: 1.2rem;
+}
+
+.doc-aside1 {
   padding-top: 2rem;
   width: 50%;
   color: white;
+  font-size: 0.9rem;
   letter-spacing: 0.08rem;;
   font-weight: 300;
 }
@@ -154,6 +163,7 @@ opacity:1;
 }
 
 .sub-heading {
+  margin-bottom: 0.5rem;
   font-size: 1.3rem;
   color: white;
   font-weight: 500;
@@ -163,8 +173,8 @@ opacity:1;
   text-align: center;
 }
 
-.documentation p {
-  padding: 0.5rem;
+.documentation1 p {
+  padding: 0.2rem;
 }
 
 .get {
