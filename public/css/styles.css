@@ -113,6 +113,13 @@ opacity:1;
   left: 300px;
 }
 
+.all-countries {
+  text-align: center;
+  color: black;
+  position: relative;
+  top: -950px;
+}
+
 #info-container {
   display: flex;
   flex-direction: column;
