@@ -130,7 +130,7 @@ const countries = [{
 },
 {
   name: 'Antigua and Barbuda',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Saint John\'s',
   city: 'Saint John\'s',
   area: '108.5',
@@ -143,7 +143,7 @@ const countries = [{
 },
 {
   name: 'The Bahamas',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Nassau',
   city: 'Nassau',
   area: '5,358',
@@ -156,7 +156,7 @@ const countries = [{
 },
 {
   name: 'Barbados',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Bridgetown',
   city: 'Bridgetown',
   area: '166.4',
@@ -169,7 +169,7 @@ const countries = [{
 },
 {
   name: 'Dominican Republic',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Santo Domingo',
   city: 'Santo Domingo',
   area: '18,704',
@@ -182,7 +182,7 @@ const countries = [{
 },
 {
   name: 'Haiti',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Port-au-Prince',
   city: 'Port-au-Prince',
   area: '10,714',
@@ -195,7 +195,7 @@ const countries = [{
 },
 {
   name: 'Cuba',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Example',
   city: 'Havana',
   area: '42,426',
@@ -208,7 +208,7 @@ const countries = [{
 },
 {
   name: 'Dominica',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Roseau',
   city: 'Roseau',
   area: '290',
@@ -221,7 +221,7 @@ const countries = [{
 },
 {
   name: 'Jamaica',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Kingston',
   city: 'Kingston',
   area: '4,244',
@@ -234,7 +234,7 @@ const countries = [{
 },
 {
   name: 'Grenada',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Saint George\'s',
   city: 'Saint George\'s',
   area: '134.6',
@@ -247,7 +247,7 @@ const countries = [{
 },
 {
   name: 'Trinidad and Tobago',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Port of Spain',
   city: 'Chaguanas',
   area: '1,981',
@@ -260,7 +260,7 @@ const countries = [{
 },
 {
   name: 'Saint Kitts and Nevis',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Basseterre',
   city: 'Basseterre',
   area: '100.8',
@@ -273,7 +273,7 @@ const countries = [{
 },
 {
   name: 'Saint Lucia',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Castries',
   city: 'Castries',
   area: '238.2',
@@ -286,7 +286,7 @@ const countries = [{
 },
 {
   name: 'Saint Vincent and the Grenadines',
-  region: 'The Caribbean',
+  region: 'Caribbean',
   capital: 'Kingstown',
   city: 'Kingstown',
   area: '150.2',
@@ -351,7 +351,7 @@ const countries = [{
 },
 {
   name: 'Colombia',
-  region: ['South America', 'The Caribbean'],
+  region: ['South America', 'Caribbean'],
   capital: 'Bogotá',
   city: 'Bogotá',
   area: '440,831',
@@ -377,7 +377,7 @@ const countries = [{
 },
 {
   name: 'Guyana',
-  region: ['South America', 'The Caribbean'],
+  region: ['South America', 'Caribbean'],
   capital: 'Georgetown',
   city: 'Georgetown',
   area: '83,000',
@@ -416,7 +416,7 @@ const countries = [{
 },
 {
   name: 'Suriname',
-  region: ['South America', 'The Caribbean'],
+  region: ['South America', 'Caribbean'],
   capital: 'Paramaribo',
   city: 'Paramaribo',
   area: '63,250',
@@ -442,7 +442,7 @@ const countries = [{
 },
 {
   name: 'Venezuela',
-  region: ['South America', 'The Caribbean'],
+  region: ['South America', 'Caribbean'],
   capital: 'Caracas',
   city: 'Caracas',
   area: '353,841',
