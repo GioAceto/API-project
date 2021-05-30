@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel='stylesheet' href='/css/styles.css')
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet")
+    title Document
+  body
+    div(id="body-container")
+      header
+        h1 Countries of the World
+      div(id="map-container")
+        img(id="map" src="./images/map.svg")
+        div(class="continent-select" id="NA-select")
+          a(href="/countries/north_america") North America
+        div(class="continent-select" id="CA-select")
+          a(href="/countries/central_america") Central America
+        div(class="continent-select" id="CR-select")
+          a(href="/countries/caribbean") Caribbean
+        div(class="continent-select" id="SA-select")
+          a(href="/countries/south_america") South America
+        div(class="continent-select" id="EU-select")
+        div(class="continent-select" id="ME-select")
+        div(class="continent-select" id="AS-select")
+        div(class="continent-select" id="AF-select")
+        div(class="continent-select" id="OC-select")
+        div(class="all-countries")
+          p View all countries 
+            a(href="/countries") here
+      div(id="info-container")
+          h2(class="doc-heading") API Documentation
+          article(class="documentation1")
+            section(class="doc-section1")
+              p(class="sub-heading") Method
+              p(class="get") GET
+              p(class="sub-heading") Route
+              p http://localhost:1400/countries
+              p(class="sub-heading") Description
+              p Returns a list of every official country from all regions
+            aside(class="doc-aside1")
+              p(class="sub-heading response-heading") Response
+              p [{
+              p name: "Mexico",
+              p region: "North America",
+              p capital: "Mexico City",
+              p city: "Mexico City",
+              p area: "761,606",
+              p population: "127.6M",
+              p gdp: "1.27T",
+              p export: "Automobiles",
+              p currency: "Mexican Peso",
+              p leader: "Andrés Manuel López Obrador",
+              p flag: "🇲🇽"
+              p "CreatedAt": "2021-05-00T00:00:00.0000"
+              p "UpdatedAt": "2021-05-00T00:00:00.0000"
+              p "DeletedAt": "null"
+              p }, {
+              p name: "Chile",
+              p region: "South America",
+              p capital: "Santiago",
+              p city: "Santiago",
+              p area: "291,933",
+              p population: "18.95M",
+              p gdp: "282.3B",
+              p export: "Copper ore",
+              p currency: "Chilean peso",
+              p leader: "Sebastián Piñera",
+              p flag: "🇨🇱"
+              p "CreatedAt": "2021-05-00T00:00:00.0000"
+              p "UpdatedAt": "2021-05-00T00:00:00.0000"
+              p "DeletedAt": "null"
+              p },
+          article(class="documentation1")
+            section(class="doc-section1")
+              p(class="sub-heading") Method
+              p(class="get") GET
+              p(class="sub-heading") Route
+              p http://localhost:1400/countries/{region}
+              p(class="sub-heading") Description
+              p Returns a list of every official country from a specific region
+            aside(class="doc-aside1")
+              p(class="sub-heading response-heading") Response
+              p [{
+              p name: "The United States of America",
+              p region: "North America",
+              p capital: "Washington DC",
+              p city: "New York City",
+              p area: "3,677,649",
+              p population: "328.2M",
+              p gdp: "21.43T",
+              p export: "Refined petroleum",
+              p currency: "US dollar",
+              p leader: "Joseph Biden",
+              p "CreatedAt": "2021-05-00T00:00:00.0000"
+              p "UpdatedAt": "2021-05-00T00:00:00.0000"
+              p "DeletedAt": "null"
+              p flag: "🇺🇸"
+              p }, {
+              p name: "Canada",
+              p region: "North America",
+              p capital: "Ottawa",
+              p city: "Toronto",
+              p area: "3,855,100",
+              p population: "37.59M",
+              p gdp: "1.74T",
+              p export: "Crude petroleum",
+              p currency: "Canadian dollar",
+              p leader: "Justin Trudeau",
+              p flag: "🇨🇦"
+              p "CreatedAt": "2021-05-00T00:00:00.0000"
+              p "UpdatedAt": "2021-05-00T00:00:00.0000"
+              p "DeletedAt": "null"
+              p },
+          article(class="documentation1")
+            section(class="doc-section1")
+              p(class="sub-heading") Method
+              p(class="post") POST
+              p(class="sub-heading") Route
+              p http://localhost:1400/countries
+              p(class="sub-heading") Headers
+              p Content-Type: application/json
+              p(class="sub-heading") Body
+              div(id="post-req")
+                p {
+                p "name": "The Republic of Texas",
+                p "region": 'North America',
+                p "capital": "Austin",
+                p "city": "Houston",
+                p "area": "268,597",
+                p "population": "29M",
+                p "gdp": "1.9T",
+                p "export": "Petroleum oils",
+                p "currency": "US dollar",
+                p "leader": "Greg Abbott",
+                p "flag": "🏳️"
+                p }
+              p(class="sub-heading") Description
+              p Creates a new country from the data provided in the body
+            aside(class="doc-aside1")
+              p(class="sub-heading response-heading") Response
+              p {
+                p "name": "The Republic of Texas",
+                p "region": 'North America',
+                p "capital": "Austin",
+                p "city": "Houston",
+                p "area": "268,597",
+                p "population": "29M",
+                p "gdp": "1.9T",
+                p "export": "Petroleum oils",
+                p "currency": "US dollar",
+                p "leader": "Greg Abbott",
+                p "flag": "🏳️"
+                p "CreatedAt": "2021-05-00T00:00:00.0000"
+                p "UpdatedAt": "2021-05-00T00:00:00.0000"
+              p }
+      footer
+
