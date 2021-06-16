@@ -438,7 +438,7 @@ const countries = [{
   export: 'Wood pulp',
   currency: 'Uruguayan peso',
   leader: 'Luis Lacalle Pou',
-  language: 'Uruguay'
+  language: 'Spanish'
 },
 {
   name: 'Venezuela',
