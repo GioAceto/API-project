@@ -9,7 +9,7 @@ const countries = [{
   export: 'Refined petroleum',
   currency: 'US dollar',
   leader: 'Joseph Biden',
-  flag: '🇺🇸'
+  language: 'English'
 },
 {
   name: 'Canada',
@@ -22,7 +22,7 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Canadian dollar',
   leader: 'Justin Trudeau',
-  flag: '🇨🇦'
+  language: 'English'
 },
 {
   name: 'Mexico',
@@ -35,11 +35,11 @@ const countries = [{
   export: 'Automobiles',
   currency: 'Mexican peso',
   leader: 'Andrés Manuel López Obrador',
-  flag: '🇲🇽'
+  language: 'Spanish'
 },
 {
   name: 'Belize',
-  region: ['Central America', 'Caribbean'],
+  region: 'Central America, Caribbean',
   capital: 'Belmopan',
   city: 'Belize City',
   area: '8,867',
@@ -48,7 +48,7 @@ const countries = [{
   export: 'Raw sugar',
   currency: 'Belize dollar',
   leader: 'Johnny Briceño',
-  flag: '🇧🇿'
+  language: 'English'
 },
 {
   name: 'Costa Rica',
@@ -61,7 +61,7 @@ const countries = [{
   export: 'Medical instruments',
   currency: 'Costa Rican colón',
   leader: 'Carlos Alvarado Quesada',
-  flag: '🇨🇷'
+  language: 'Spanish'
 },
 {
   name: 'El Salvador',
@@ -74,7 +74,7 @@ const countries = [{
   export: 'Clothing',
   currency: 'Salvadoran colón',
   leader: 'Carlos Alvarado Quesada',
-  flag: '🇸🇻'
+  language: 'Spanish'
 },
 {
   name: 'Guatemala',
@@ -87,7 +87,7 @@ const countries = [{
   export: 'Bananas',
   currency: 'Guatemalan quetzal',
   leader: 'Alejandro Giammattei',
-  flag: '🇬🇹'
+  language: 'Spanish'
 },
 {
   name: 'Honduras',
@@ -100,7 +100,7 @@ const countries = [{
   export: 'Clothing',
   currency: 'Honduran lempira',
   leader: 'Juan Orlando Hernández',
-  flag: '🇭🇳'
+  language: 'Spanish'
 },
 {
   name: 'Nicaragua',
@@ -113,7 +113,7 @@ const countries = [{
   export: 'Clothing',
   currency: 'Nicaraguan córdoba',
   leader: 'Daniel Ortega',
-  flag: '🇳🇮'
+  language: 'Spanish'
 },
 {
   name: 'Panama',
@@ -124,9 +124,9 @@ const countries = [{
   population: '4.24M',
   gdp: '66.8B',
   export: 'Refined petroleum',
-  currency: ['Panamanian balboa', 'US dollar'],
+  currency: 'Panamanian balboa, US dollar',
   leader: 'Laurentino Cortizo',
-  flag: '🇵🇦'
+  language: 'Spanish'
 },
 {
   name: 'Antigua and Barbuda',
@@ -139,7 +139,7 @@ const countries = [{
   export: 'Passenger and cargo ships',
   currency: 'Eastern Caribbean dollar',
   leader: 'Gaston Browne',
-  flag: '🇦🇬'
+  language: 'English'
 },
 {
   name: 'The Bahamas',
@@ -152,7 +152,7 @@ const countries = [{
   export: 'Passenger and cargo ships',
   currency: 'Bahamian dollar',
   leader: 'Hubert Minnis',
-  flag: '🇧🇸'
+  language: 'English'
 },
 {
   name: 'Barbados',
@@ -165,7 +165,7 @@ const countries = [{
   export: 'Hard Liquor',
   currency: 'Barbadian dollar',
   leader: 'Mia Mottley',
-  flag: '🇧🇧'
+  language: 'English'
 },
 {
   name: 'Dominican Republic',
@@ -178,7 +178,7 @@ const countries = [{
   export: 'Gold',
   currency: 'Dominican peso',
   leader: 'Luis Abinader',
-  flag: '🇩🇴'
+  language: 'Spanish'
 },
 {
   name: 'Haiti',
@@ -191,7 +191,7 @@ const countries = [{
   export: 'Clothing',
   currency: 'Haitian gourde',
   leader: 'Jovenel Moïse',
-  flag: '🇭🇹'
+  language: 'French'
 },
 {
   name: 'Cuba',
@@ -204,7 +204,7 @@ const countries = [{
   export: 'Rolled tobacco',
   currency: 'Cuban peso',
   leader: 'Miguel Díaz-Canel',
-  flag: '🇨🇺'
+  language: 'Spanish'
 },
 {
   name: 'Dominica',
@@ -217,7 +217,7 @@ const countries = [{
   export: 'Medical instruments',
   currency: 'Eastern Caribbean dollar',
   leader: 'Charles Savarin',
-  flag: '🇩🇲'
+  language: 'English'
 },
 {
   name: 'Jamaica',
@@ -230,7 +230,7 @@ const countries = [{
   export: 'Aluminum oxide',
   currency: 'Jamaican dollar',
   leader: 'Andrew Holness',
-  flag: '🇯🇲'
+  language: 'English'
 },
 {
   name: 'Grenada',
@@ -243,7 +243,7 @@ const countries = [{
   export: 'Fish',
   currency: 'Eastern Caribbean dollar',
   leader: 'Keith Mitchell',
-  flag: '🇬🇩'
+  language: 'English'
 },
 {
   name: 'Trinidad and Tobago',
@@ -256,7 +256,7 @@ const countries = [{
   export: 'Petroleum gas',
   currency: 'Trinidad and Tobago dollar',
   leader: 'Paula-Mae Weekes',
-  flag: '🇹🇹'
+  language: 'English'
 },
 {
   name: 'Saint Kitts and Nevis',
@@ -269,7 +269,7 @@ const countries = [{
   export: 'Low-voltage protection equipment',
   currency: 'Eastern Caribbean dollar',
   leader: 'Timothy Sylvester Harris',
-  flag: '🇰🇳'
+  language: 'English'
 },
 {
   name: 'Saint Lucia',
@@ -282,7 +282,7 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Eastern Caribbean dollar',
   leader: 'Allen Michael Chastanet',
-  flag: '🇱🇨'
+  language: 'English'
 },
 {
   name: 'Saint Vincent and the Grenadines',
@@ -295,7 +295,7 @@ const countries = [{
   export: 'Petroleum gas',
   currency: 'Eastern Caribbean dollar',
   leader: 'Ralph Everard Gonsalves',
-  flag: '🇻🇨'
+  language: 'English'
 },
 {
   name: 'Argentina',
@@ -308,12 +308,12 @@ const countries = [{
   export: 'Soybean meal',
   currency: 'Argentine peso',
   leader: 'Alberto Fernández',
-  flag: '🇦🇷'
+  language: 'Spanish'
 },
 {
   name: 'Bolivia',
   region: 'South America',
-  capital: ['La Paz', 'Sucre'],
+  capital: 'La Paz, Sucre',
   city: 'Santa Cruz de la Sierra',
   area: '424,164',
   population: '11.51M',
@@ -321,7 +321,7 @@ const countries = [{
   export: 'Petroleum gas',
   currency: 'Bolivian boliviano',
   leader: 'Luis Arce',
-  flag: '🇧🇴'
+  language: 'Spanish'
 },
 {
   name: 'Brazil',
@@ -334,7 +334,7 @@ const countries = [{
   export: 'Soybeans',
   currency: 'Brazilian real',
   leader: 'Jair Bolsonaro',
-  flag: '🇧🇷'
+  language: 'Portuguese'
 },
 {
   name: 'Chile',
@@ -347,11 +347,11 @@ const countries = [{
   export: 'Copper ore',
   currency: 'Chilean peso',
   leader: 'Sebastián Piñera',
-  flag: '🇨🇱'
+  language: 'Spanish'
 },
 {
   name: 'Colombia',
-  region: ['South America', 'Caribbean'],
+  region: 'South America, Caribbean',
   capital: 'Bogotá',
   city: 'Bogotá',
   area: '440,831',
@@ -360,7 +360,7 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Colombian peso',
   leader: 'Iván Duque Márquez',
-  flag: '🇨🇴'
+  language: 'Spanish'
 },
 {
   name: 'Ecuador',
@@ -373,11 +373,11 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'US dollar',
   leader: 'Lenín Moreno',
-  flag: '🇪🇨'
+  language: 'Spanish'
 },
 {
   name: 'Guyana',
-  region: ['South America', 'Caribbean'],
+  region: 'South America, Caribbean',
   capital: 'Georgetown',
   city: 'Georgetown',
   area: '83,000',
@@ -386,7 +386,7 @@ const countries = [{
   export: 'Special purpose ships',
   currency: 'Guyanese dollar',
   leader: 'Irfaan Ali',
-  flag: '🇬🇾'
+  language: 'English'
 },
 {
   name: 'Paraguay',
@@ -399,7 +399,7 @@ const countries = [{
   export: 'Soybeans',
   currency: 'Paraguayan guaraní',
   leader: 'Mario Abdo Benítez',
-  flag: '🇵🇾'
+  language: 'Guaraní'
 },
 {
   name: 'Peru',
@@ -412,11 +412,11 @@ const countries = [{
   export: 'Copper ore',
   currency: 'Nuevo sol',
   leader: 'Francisco Sagasti',
-  flag: '🇵🇪'
+  language: 'Spanish'
 },
 {
   name: 'Suriname',
-  region: ['South America', 'Caribbean'],
+  region: 'South America, Caribbean',
   capital: 'Paramaribo',
   city: 'Paramaribo',
   area: '63,250',
@@ -425,7 +425,7 @@ const countries = [{
   export: 'Gold',
   currency: 'Surinamese dollar',
   leader: 'Chan Santokhi',
-  flag: '🇸🇷'
+  language: 'Dutch'
 },
 {
   name: 'Uruguay',
@@ -438,11 +438,11 @@ const countries = [{
   export: 'Wood pulp',
   currency: 'Uruguayan peso',
   leader: 'Luis Lacalle Pou',
-  flag: '🇺🇾'
+  language: 'Uruguay'
 },
 {
   name: 'Venezuela',
-  region: ['South America', 'Caribbean'],
+  region: 'South America, Caribbean',
   capital: 'Caracas',
   city: 'Caracas',
   area: '353,841',
@@ -450,8 +450,8 @@ const countries = [{
   gdp: '482.4B',
   export: 'Crude petroleum',
   currency: 'Bolívar soberano',
-  leader: ['Nicolás Maduro', 'Juan Guaidó'],
-  flag: '🇻🇪'
+  leader: 'Nicolás Maduro, Juan Guaidó',
+  language: 'Spanish'
 }
 ]
 
