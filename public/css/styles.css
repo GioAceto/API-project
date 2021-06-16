@@ -194,6 +194,7 @@ opacity:1;
 table {
   margin: 2rem 0 2rem 2rem;
   width: 90%;
+  min-width: 800px;
 }
 
 tr:nth-child(even) {
@@ -213,6 +214,10 @@ padding: 0.25rem;
 td:first-child {
   width: 25%;
   font-weight: 500;
+}
+
+.flag{
+  width: 400px;
 }
 
 #post-req p {

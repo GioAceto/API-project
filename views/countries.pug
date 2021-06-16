@@ -16,10 +16,11 @@ html(lang="en")
         table
           for country in countries
             tr
-              th(colspan="2")= country.name
+              th(colspan="3")= country.name
                 tr
                   td Capital:
                   td=country.capital
+                  td(class="flag" rowspan="9")
                 tr
                   td Total Land Area (miles²):
                   td=country.area
@@ -44,3 +45,4 @@ html(lang="en")
                 tr(class="last")
                   td Most Spoken Language:
                   td=country.language
+              
