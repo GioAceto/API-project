@@ -9,7 +9,8 @@ const countries = [{
   export: 'Refined petroleum',
   currency: 'US dollar',
   leader: 'Joseph Biden',
-  language: 'English'
+  language: 'English',
+  flag: 'us-flag.gif'
 },
 {
   name: 'Canada',
@@ -22,7 +23,8 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Canadian dollar',
   leader: 'Justin Trudeau',
-  language: 'English'
+  language: 'English',
+  flag: 'ca-flag.gif'
 },
 {
   name: 'Mexico',
@@ -35,7 +37,8 @@ const countries = [{
   export: 'Automobiles',
   currency: 'Mexican peso',
   leader: 'Andrés Manuel López Obrador',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'mx-flag.gif'
 },
 {
   name: 'Belize',
@@ -48,7 +51,8 @@ const countries = [{
   export: 'Raw sugar',
   currency: 'Belize dollar',
   leader: 'Johnny Briceño',
-  language: 'English'
+  language: 'English',
+  flag: 'bh-flag.gif'
 },
 {
   name: 'Costa Rica',
@@ -61,7 +65,8 @@ const countries = [{
   export: 'Medical instruments',
   currency: 'Costa Rican colón',
   leader: 'Carlos Alvarado Quesada',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'cs-flag.gif'
 },
 {
   name: 'El Salvador',
@@ -74,7 +79,8 @@ const countries = [{
   export: 'Clothing',
   currency: 'Salvadoran colón',
   leader: 'Carlos Alvarado Quesada',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'es-flag.gif'
 },
 {
   name: 'Guatemala',
@@ -87,7 +93,8 @@ const countries = [{
   export: 'Bananas',
   currency: 'Guatemalan quetzal',
   leader: 'Alejandro Giammattei',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'gt-flag.gif'
 },
 {
   name: 'Honduras',
@@ -100,7 +107,8 @@ const countries = [{
   export: 'Clothing',
   currency: 'Honduran lempira',
   leader: 'Juan Orlando Hernández',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'ho-flag.gif'
 },
 {
   name: 'Nicaragua',
@@ -113,7 +121,8 @@ const countries = [{
   export: 'Clothing',
   currency: 'Nicaraguan córdoba',
   leader: 'Daniel Ortega',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'nu-flag.gif'
 },
 {
   name: 'Panama',
@@ -126,7 +135,8 @@ const countries = [{
   export: 'Refined petroleum',
   currency: 'Panamanian balboa, US dollar',
   leader: 'Laurentino Cortizo',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'pm-flag.gif'
 },
 {
   name: 'Antigua and Barbuda',
@@ -139,7 +149,8 @@ const countries = [{
   export: 'Passenger and cargo ships',
   currency: 'Eastern Caribbean dollar',
   leader: 'Gaston Browne',
-  language: 'English'
+  language: 'English',
+  flag: 'ac-flag.gif'
 },
 {
   name: 'The Bahamas',
@@ -152,7 +163,8 @@ const countries = [{
   export: 'Passenger and cargo ships',
   currency: 'Bahamian dollar',
   leader: 'Hubert Minnis',
-  language: 'English'
+  language: 'English',
+  flag: 'bf-flag.gif'
 },
 {
   name: 'Barbados',
@@ -165,7 +177,8 @@ const countries = [{
   export: 'Hard Liquor',
   currency: 'Barbadian dollar',
   leader: 'Mia Mottley',
-  language: 'English'
+  language: 'English',
+  flag: 'bb-flag.gif'
 },
 {
   name: 'Dominican Republic',
@@ -178,7 +191,8 @@ const countries = [{
   export: 'Gold',
   currency: 'Dominican peso',
   leader: 'Luis Abinader',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'dr-flag.gif'
 },
 {
   name: 'Haiti',
@@ -191,7 +205,8 @@ const countries = [{
   export: 'Clothing',
   currency: 'Haitian gourde',
   leader: 'Jovenel Moïse',
-  language: 'French'
+  language: 'French',
+  flag: 'ha-flag.gif'
 },
 {
   name: 'Cuba',
@@ -204,7 +219,8 @@ const countries = [{
   export: 'Rolled tobacco',
   currency: 'Cuban peso',
   leader: 'Miguel Díaz-Canel',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'cu-flag.gif'
 },
 {
   name: 'Dominica',
@@ -217,7 +233,8 @@ const countries = [{
   export: 'Medical instruments',
   currency: 'Eastern Caribbean dollar',
   leader: 'Charles Savarin',
-  language: 'English'
+  language: 'English',
+  flag: 'do-flag.gif'
 },
 {
   name: 'Jamaica',
@@ -230,7 +247,8 @@ const countries = [{
   export: 'Aluminum oxide',
   currency: 'Jamaican dollar',
   leader: 'Andrew Holness',
-  language: 'English'
+  language: 'English',
+  flag: 'jm-flag.gif'
 },
 {
   name: 'Grenada',
@@ -243,7 +261,8 @@ const countries = [{
   export: 'Fish',
   currency: 'Eastern Caribbean dollar',
   leader: 'Keith Mitchell',
-  language: 'English'
+  language: 'English',
+  flag: 'gj-flag.gif'
 },
 {
   name: 'Trinidad and Tobago',
@@ -256,7 +275,8 @@ const countries = [{
   export: 'Petroleum gas',
   currency: 'Trinidad and Tobago dollar',
   leader: 'Paula-Mae Weekes',
-  language: 'English'
+  language: 'English',
+  flag: 'td-flag.gif'
 },
 {
   name: 'Saint Kitts and Nevis',
@@ -269,7 +289,8 @@ const countries = [{
   export: 'Low-voltage protection equipment',
   currency: 'Eastern Caribbean dollar',
   leader: 'Timothy Sylvester Harris',
-  language: 'English'
+  language: 'English',
+  flag: 'sc-flag.gif'
 },
 {
   name: 'Saint Lucia',
@@ -282,7 +303,8 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Eastern Caribbean dollar',
   leader: 'Allen Michael Chastanet',
-  language: 'English'
+  language: 'English',
+  flag: 'st-flag.gif'
 },
 {
   name: 'Saint Vincent and the Grenadines',
@@ -295,7 +317,8 @@ const countries = [{
   export: 'Petroleum gas',
   currency: 'Eastern Caribbean dollar',
   leader: 'Ralph Everard Gonsalves',
-  language: 'English'
+  language: 'English',
+  flag: 'vc-flag.gif'
 },
 {
   name: 'Argentina',
@@ -308,7 +331,8 @@ const countries = [{
   export: 'Soybean meal',
   currency: 'Argentine peso',
   leader: 'Alberto Fernández',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'ar-flag.gif'
 },
 {
   name: 'Bolivia',
@@ -321,7 +345,8 @@ const countries = [{
   export: 'Petroleum gas',
   currency: 'Bolivian boliviano',
   leader: 'Luis Arce',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'bl-flag.gif'
 },
 {
   name: 'Brazil',
@@ -334,7 +359,8 @@ const countries = [{
   export: 'Soybeans',
   currency: 'Brazilian real',
   leader: 'Jair Bolsonaro',
-  language: 'Portuguese'
+  language: 'Portuguese',
+  flag: 'br-flag.gif'
 },
 {
   name: 'Chile',
@@ -347,7 +373,8 @@ const countries = [{
   export: 'Copper ore',
   currency: 'Chilean peso',
   leader: 'Sebastián Piñera',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'ci-flag.gif'
 },
 {
   name: 'Colombia',
@@ -360,7 +387,8 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Colombian peso',
   leader: 'Iván Duque Márquez',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'co-flag.gif'
 },
 {
   name: 'Ecuador',
@@ -373,7 +401,8 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'US dollar',
   leader: 'Lenín Moreno',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'ec-flag.gif'
 },
 {
   name: 'Guyana',
@@ -386,7 +415,8 @@ const countries = [{
   export: 'Special purpose ships',
   currency: 'Guyanese dollar',
   leader: 'Irfaan Ali',
-  language: 'English'
+  language: 'English',
+  flag: 'gy-flag.gif'
 },
 {
   name: 'Paraguay',
@@ -399,7 +429,8 @@ const countries = [{
   export: 'Soybeans',
   currency: 'Paraguayan guaraní',
   leader: 'Mario Abdo Benítez',
-  language: 'Guaraní'
+  language: 'Guaraní',
+  flag: 'pa-flag.gif'
 },
 {
   name: 'Peru',
@@ -412,7 +443,8 @@ const countries = [{
   export: 'Copper ore',
   currency: 'Nuevo sol',
   leader: 'Francisco Sagasti',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'pe-flag.gif'
 },
 {
   name: 'Suriname',
@@ -425,7 +457,8 @@ const countries = [{
   export: 'Gold',
   currency: 'Surinamese dollar',
   leader: 'Chan Santokhi',
-  language: 'Dutch'
+  language: 'Dutch',
+  flag: 'ns-flag.gif'
 },
 {
   name: 'Uruguay',
@@ -438,7 +471,8 @@ const countries = [{
   export: 'Wood pulp',
   currency: 'Uruguayan peso',
   leader: 'Luis Lacalle Pou',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 'uy-flag.gif'
 },
 {
   name: 'Venezuela',
@@ -451,7 +485,8 @@ const countries = [{
   export: 'Crude petroleum',
   currency: 'Bolívar soberano',
   leader: 'Nicolás Maduro, Juan Guaidó',
-  language: 'Spanish'
+  language: 'Spanish',
+  flag: 've-flag.gif'
 }
 ]
 

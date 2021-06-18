@@ -7,19 +7,21 @@ html(lang="en")
     link(rel='stylesheet' href='/css/styles.css')
     link(rel="preconnect" href="https://fonts.gstatic.com")
     link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet")
-    title The Caribbean
+    title Caribbean
   body
     div(class="structure")
       header
-        h1 Countries of The Caribbean
+        h1 Countries of the Caribbean
       div
         table
           for country in countries
             tr
-              th(colspan="2")= country.name
+              th(colspan="3")= country.name
                 tr
                   td Capital:
                   td=country.capital
+                  td(class="flag" rowspan="9")
+                    img(src="/images/" + country.flag)
                 tr
                   td Total Land Area (miles²):
                   td=country.area
@@ -44,3 +46,4 @@ html(lang="en")
                 tr(class="last")
                   td Most Spoken Language:
                   td=country.language
+              
