@@ -216,7 +216,11 @@ td:first-child {
   font-weight: 500;
 }
 
-.flag{
+.flag-column {
+  width: 400px;
+}
+
+.flag {
   width: 400px;
 }
 
