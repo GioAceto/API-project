@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const countries = require('./countries')
 const { errorFunction } = require('./controllers/cont-data')
 
