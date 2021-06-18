@@ -33,6 +33,26 @@ app.get('/countries/south_america', (req, res) => {
   res.render('south_america', { countries })
 })
 
+app.get('/countries/europe', (req, res) => {
+  res.render('europe', { countries })
+})
+
+app.get('/countries/africa', (req, res) => {
+  res.render('africa', { countries })
+})
+
+app.get('/countries/middle_east', (req, res) => {
+  res.render('middle_east', { countries })
+})
+
+app.get('/countries/asia', (req, res) => {
+  res.render('asia', { countries })
+})
+
+app.get('/countries/oceania', (req, res) => {
+  res.render('oceania', { countries })
+})
+
 
 app.get('*', errorFunction)
 

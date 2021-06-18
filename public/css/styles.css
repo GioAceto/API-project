@@ -113,11 +113,51 @@ opacity:1;
   left: 300px;
 }
 
+#EU-select {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: -743px;
+  left: 495px;
+}
+
+#AF-select {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: -760px;
+  left: 470px;
+}
+
+#ME-select {
+  width: 60px;
+  height: 50px;
+  position: relative;
+  top: -720px;
+  left: 560px;
+}
+
+#AS-select {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: -800px;
+  left: 680px;
+}
+
+#OC-select {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: -707px;
+  left: 850px;
+}
+
 .all-countries {
   text-align: center;
   color: black;
   position: relative;
-  top: -950px;
+  top: -1100px;
 }
 
 #info-container {
