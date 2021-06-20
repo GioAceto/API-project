@@ -9,14 +9,34 @@ const getMain = (req, res) => {
 }
 
 const getAllCountries = async (req, res) => {
-  const countries = await models.RegionsCountries.findAll()
+  const countries = await models.Countries.findAll({
+    include: [
+      {
+        model: models.Regions
+      }
+    ]
+  })
+
+  return res.send(countries)
+}
+
+const getNACountries = async (req, res) => {
+  const countries = await models.Countries.findAll({
+    include: [
+      {
+        model: models.Regions
+      }
+    ]
+  })
 
   return res.send(countries)
 }
 
 
+
 module.exports = {
   errorFunction,
   getMain,
-  getAllCountries
+  getAllCountries,
+  getNACountries
 }

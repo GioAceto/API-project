@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const countries = require('./countries')
-const { errorFunction, getMain, getAllCountries } = require('./controllers/cont-countries')
+const { errorFunction, getMain, getAllCountries, getNACountries } = require('./controllers/cont-countries')
 
 const PORT = 1400
 const app = express()
@@ -14,9 +14,7 @@ app.get('/', getMain)
 
 app.get('/countries/', getAllCountries)
 
-// app.get('/countries/north_america', (req, res) => {
-//   res.render('north_america', { countries })
-// })
+app.get('/countries/north_america', getNACountries)
 
 // app.get('/countries/central_america', (req, res) => {
 //   res.render('central_america', { countries })

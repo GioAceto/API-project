@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize')
 const allConfigs = require('../config/sequelize')
 const CountriesModel = require('./countries')
-const LanguagesModel = require('./languages')
 const RegionsModel = require('./regions')
 const RegionsCountriesModel = require('./regionsCountries')
 
@@ -12,17 +11,14 @@ const connection = new Sequelize(config.database, config.username, config.passwo
   host: config.host, dialect: config.dialect
 })
 
-const Languages = LanguagesModel(connection, Sequelize)
-const Countries = CountriesModel(connection, Sequelize, Languages)
+const Countries = CountriesModel(connection, Sequelize)
 const Regions = RegionsModel(connection, Sequelize)
 const RegionsCountries = RegionsCountriesModel(connection, Sequelize, Regions, Countries)
 
-Languages.belongsTo(Countries)
 Regions.belongsToMany(Countries, { through: RegionsCountries })
 Countries.belongsToMany(Regions, { through: RegionsCountries })
 
 module.exports = {
-  Languages,
   Countries,
   Regions,
   RegionsCountries,

@@ -1,4 +1,4 @@
-const Countries = (connection, Sequelize, Languages) => {
+const Countries = (connection, Sequelize) => {
   return connection.define('countries', {
     id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
     name: { type: Sequelize.STRING, allowNull: false },
@@ -10,7 +10,7 @@ const Countries = (connection, Sequelize, Languages) => {
     export: { type: Sequelize.STRING, allowNull: false },
     currency: { type: Sequelize.STRING, allowNull: false },
     leader: { type: Sequelize.STRING, allowNull: false },
-    languageId: { type: Sequelize.INTEGER, references: { model: Languages, key: 'id' } },
+    language: { type: Sequelize.STRING, allowNull: false },
     flag: { type: Sequelize.STRING, allowNull: false }
   })
 }

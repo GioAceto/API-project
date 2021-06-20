@@ -3,17 +3,6 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
 
-    await queryInterface.createTable('languages', {
-      id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
-      language: { type: Sequelize.STRING },
-      createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
-      updatedAt: {
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP')
-      },
-      deletedAt: { type: Sequelize.DATE },
-    })
-
     await queryInterface.createTable('regions', {
       id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
       region: { type: Sequelize.STRING },
@@ -36,7 +25,7 @@ module.exports = {
       export: { type: Sequelize.STRING },
       currency: { type: Sequelize.STRING },
       leader: { type: Sequelize.STRING },
-      languageId: { type: Sequelize.INTEGER, references: { model: 'languages', key: 'id' } },
+      language: { type: Sequelize.STRING },
       flag: { type: Sequelize.STRING },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
       updatedAt: {
@@ -60,8 +49,6 @@ module.exports = {
   },
 
   down: async (queryInterface) => {
-
-    await queryInterface.dropTable('languages')
 
     await queryInterface.dropTable('regions')
 

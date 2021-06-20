@@ -3,15 +3,6 @@
 module.exports = {
   up: async (queryInterface) => {
 
-    await queryInterface.bulkInsert('languages', [
-      { language: 'English' },
-      { language: 'Spanish' },
-      { language: 'French' },
-      { language: 'Dutch' },
-      { language: 'Portuguese' },
-      { language: 'Guaraní' }
-    ])
-
     await queryInterface.bulkInsert('regions', [
       { region: 'North America' },
       { region: 'Central America' },
@@ -37,7 +28,7 @@ module.exports = {
         export: 'Refined petroleum',
         currency: 'US dollar',
         leader: 'Joseph Biden',
-        languageId: 1,
+        language: 'English',
         flag: 'us-flag.gif'
       },
       {
@@ -50,7 +41,7 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Canadian dollar',
         leader: 'Justin Trudeau',
-        languageId: 1,
+        language: 'English',
         flag: 'ca-flag.gif'
       },
       {
@@ -63,7 +54,7 @@ module.exports = {
         export: 'Automobiles',
         currency: 'Mexican peso',
         leader: 'Andrés Manuel López Obrador',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'mx-flag.gif'
       },
       {
@@ -76,7 +67,7 @@ module.exports = {
         export: 'Raw sugar',
         currency: 'Belize dollar',
         leader: 'Johnny Briceño',
-        languageId: 1,
+        language: 'English',
         flag: 'bh-flag.gif'
       },
       {
@@ -89,7 +80,7 @@ module.exports = {
         export: 'Medical instruments',
         currency: 'Costa Rican colón',
         leader: 'Carlos Alvarado Quesada',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'cs-flag.gif'
       },
       {
@@ -102,7 +93,7 @@ module.exports = {
         export: 'Clothing',
         currency: 'Salvadoran colón',
         leader: 'Carlos Alvarado Quesada',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'es-flag.gif'
       },
       {
@@ -115,7 +106,7 @@ module.exports = {
         export: 'Bananas',
         currency: 'Guatemalan quetzal',
         leader: 'Alejandro Giammattei',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'gt-flag.gif'
       },
       {
@@ -128,7 +119,7 @@ module.exports = {
         export: 'Clothing',
         currency: 'Honduran lempira',
         leader: 'Juan Orlando Hernández',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'ho-flag.gif'
       },
       {
@@ -141,7 +132,7 @@ module.exports = {
         export: 'Clothing',
         currency: 'Nicaraguan córdoba',
         leader: 'Daniel Ortega',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'nu-flag.gif'
       },
       {
@@ -154,7 +145,7 @@ module.exports = {
         export: 'Refined petroleum',
         currency: 'Panamanian balboa, US dollar',
         leader: 'Laurentino Cortizo',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'pm-flag.gif'
       },
       {
@@ -167,7 +158,7 @@ module.exports = {
         export: 'Passenger and cargo ships',
         currency: 'Eastern Caribbean dollar',
         leader: 'Gaston Browne',
-        languageId: 1,
+        language: 'English',
         flag: 'ac-flag.gif'
       },
       {
@@ -180,7 +171,7 @@ module.exports = {
         export: 'Passenger and cargo ships',
         currency: 'Bahamian dollar',
         leader: 'Hubert Minnis',
-        languageId: 1,
+        language: 'English',
         flag: 'bf-flag.gif'
       },
       {
@@ -193,7 +184,7 @@ module.exports = {
         export: 'Hard Liquor',
         currency: 'Barbadian dollar',
         leader: 'Mia Mottley',
-        languageId: 1,
+        language: 'English',
         flag: 'bb-flag.gif'
       },
       {
@@ -206,7 +197,7 @@ module.exports = {
         export: 'Gold',
         currency: 'Dominican peso',
         leader: 'Luis Abinader',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'dr-flag.gif'
       },
       {
@@ -219,7 +210,7 @@ module.exports = {
         export: 'Clothing',
         currency: 'Haitian gourde',
         leader: 'Jovenel Moïse',
-        languageId: 3,
+        language: 'French',
         flag: 'ha-flag.gif'
       },
       {
@@ -232,7 +223,7 @@ module.exports = {
         export: 'Rolled tobacco',
         currency: 'Cuban peso',
         leader: 'Miguel Díaz-Canel',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'cu-flag.gif'
       },
       {
@@ -245,7 +236,7 @@ module.exports = {
         export: 'Medical instruments',
         currency: 'Eastern Caribbean dollar',
         leader: 'Charles Savarin',
-        languageId: 1,
+        language: 'English',
         flag: 'do-flag.gif'
       },
       {
@@ -258,7 +249,7 @@ module.exports = {
         export: 'Aluminum oxide',
         currency: 'Jamaican dollar',
         leader: 'Andrew Holness',
-        languageId: 1,
+        language: 'English',
         flag: 'jm-flag.gif'
       },
       {
@@ -271,7 +262,7 @@ module.exports = {
         export: 'Fish',
         currency: 'Eastern Caribbean dollar',
         leader: 'Keith Mitchell',
-        languageId: 1,
+        language: 'English',
         flag: 'gj-flag.gif'
       },
       {
@@ -284,7 +275,7 @@ module.exports = {
         export: 'Petroleum gas',
         currency: 'Trinidad and Tobago dollar',
         leader: 'Paula-Mae Weekes',
-        languageId: 1,
+        language: 'English',
         flag: 'td-flag.gif'
       },
       {
@@ -297,7 +288,7 @@ module.exports = {
         export: 'Low-voltage protection equipment',
         currency: 'Eastern Caribbean dollar',
         leader: 'Timothy Sylvester Harris',
-        languageId: 1,
+        language: 'English',
         flag: 'sc-flag.gif'
       },
       {
@@ -310,7 +301,7 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Eastern Caribbean dollar',
         leader: 'Allen Michael Chastanet',
-        languageId: 1,
+        language: 'English',
         flag: 'st-flag.gif'
       },
       {
@@ -323,7 +314,7 @@ module.exports = {
         export: 'Petroleum gas',
         currency: 'Eastern Caribbean dollar',
         leader: 'Ralph Everard Gonsalves',
-        languageId: 1,
+        language: 'English',
         flag: 'vc-flag.gif'
       },
       {
@@ -336,7 +327,7 @@ module.exports = {
         export: 'Soybean meal',
         currency: 'Argentine peso',
         leader: 'Alberto Fernández',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'ar-flag.gif'
       },
       {
@@ -349,7 +340,7 @@ module.exports = {
         export: 'Petroleum gas',
         currency: 'Bolivian boliviano',
         leader: 'Luis Arce',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'bl-flag.gif'
       },
       {
@@ -362,7 +353,7 @@ module.exports = {
         export: 'Soybeans',
         currency: 'Brazilian real',
         leader: 'Jair Bolsonaro',
-        languageId: 5,
+        language: 'Portuguese',
         flag: 'br-flag.gif'
       },
       {
@@ -375,7 +366,7 @@ module.exports = {
         export: 'Copper ore',
         currency: 'Chilean peso',
         leader: 'Sebastián Piñera',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'ci-flag.gif'
       },
       {
@@ -388,7 +379,7 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Colombian peso',
         leader: 'Iván Duque Márquez',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'co-flag.gif'
       },
       {
@@ -401,7 +392,7 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'US dollar',
         leader: 'Lenín Moreno',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'ec-flag.gif'
       },
       {
@@ -414,7 +405,7 @@ module.exports = {
         export: 'Special purpose ships',
         currency: 'Guyanese dollar',
         leader: 'Irfaan Ali',
-        languageId: 1,
+        language: 'English',
         flag: 'gy-flag.gif'
       },
       {
@@ -427,7 +418,7 @@ module.exports = {
         export: 'Soybeans',
         currency: 'Paraguayan guaraní',
         leader: 'Mario Abdo Benítez',
-        languageId: 6,
+        language: 'Guaraní',
         flag: 'pa-flag.gif'
       },
       {
@@ -440,7 +431,7 @@ module.exports = {
         export: 'Copper ore',
         currency: 'Nuevo sol',
         leader: 'Francisco Sagasti',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'pe-flag.gif'
       },
       {
@@ -453,7 +444,7 @@ module.exports = {
         export: 'Gold',
         currency: 'Surinamese dollar',
         leader: 'Chan Santokhi',
-        languageId: 4,
+        language: 'Dutch',
         flag: 'ns-flag.gif'
       },
       {
@@ -466,7 +457,7 @@ module.exports = {
         export: 'Wood pulp',
         currency: 'Uruguayan peso',
         leader: 'Luis Lacalle Pou',
-        languageId: 2,
+        language: 'Spanish',
         flag: 'uy-flag.gif'
       },
       {
@@ -479,7 +470,7 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Bolívar soberano',
         leader: 'Nicolás Maduro, Juan Guaidó',
-        languageId: 2,
+        language: 'Spanish',
         flag: 've-flag.gif'
       },
     ])
@@ -530,8 +521,6 @@ module.exports = {
   },
 
   down: async (queryInterface) => {
-
-    await queryInterface.bulkDelete('languages')
 
     await queryInterface.bulkDelete('regions')
 
