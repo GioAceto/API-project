@@ -17,7 +17,7 @@ const getAllCountries = async (req, res) => {
     ]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getNACountries = async (req, res) => {
@@ -28,7 +28,7 @@ const getNACountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getCACountries = async (req, res) => {
@@ -39,7 +39,7 @@ const getCACountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getCRCountries = async (req, res) => {
@@ -50,7 +50,7 @@ const getCRCountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getSACountries = async (req, res) => {
@@ -61,7 +61,7 @@ const getSACountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getEUCountries = async (req, res) => {
@@ -72,7 +72,7 @@ const getEUCountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getMECountries = async (req, res) => {
@@ -83,7 +83,7 @@ const getMECountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getAFCountries = async (req, res) => {
@@ -94,7 +94,7 @@ const getAFCountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getASCountries = async (req, res) => {
@@ -105,7 +105,7 @@ const getASCountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 const getOCCountries = async (req, res) => {
@@ -116,7 +116,7 @@ const getOCCountries = async (req, res) => {
     }]
   })
 
-  return res.send(countries)
+  return res.render('countries', { countries })
 }
 
 module.exports = {
