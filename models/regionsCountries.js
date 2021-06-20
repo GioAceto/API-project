@@ -1,7 +1,7 @@
-const RegionsCountries = (connection, Sequelize, Genres, Novels) => {
+const RegionsCountries = (connection, Sequelize, Regions, Countries) => {
   return connection.define('regionsCountries', {
-    regionsId: { type: Sequelize.INTEGER, references: { model: Regions, key: 'id' } },
-    countriesId: { type: Sequelize.INTEGER, references: { model: Countries, key: 'id' } },
+    regionId: { type: Sequelize.INTEGER, references: { model: Regions, key: 'id' } },
+    countryId: { type: Sequelize.INTEGER, references: { model: Countries, key: 'id' } },
   })
 }
 

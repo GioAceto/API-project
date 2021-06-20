@@ -18,7 +18,6 @@ const Regions = RegionsModel(connection, Sequelize)
 const RegionsCountries = RegionsCountriesModel(connection, Sequelize, Regions, Countries)
 
 Languages.belongsTo(Countries)
-
 Regions.belongsToMany(Countries, { through: RegionsCountries })
 Countries.belongsToMany(Regions, { through: RegionsCountries })
 

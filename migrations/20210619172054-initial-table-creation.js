@@ -36,7 +36,7 @@ module.exports = {
       export: { type: Sequelize.STRING },
       currency: { type: Sequelize.STRING },
       leader: { type: Sequelize.STRING },
-      languagesId: { type: Sequelize.INTEGER, references: { model: 'languages', key: 'id' } },
+      languageId: { type: Sequelize.INTEGER, references: { model: 'languages', key: 'id' } },
       flag: { type: Sequelize.STRING },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
       updatedAt: {
@@ -48,8 +48,8 @@ module.exports = {
 
     return queryInterface.createTable('regionsCountries', {
       id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
-      regionsId: { type: Sequelize.INTEGER },
-      countriesId: { type: Sequelize.INTEGER },
+      regionId: { type: Sequelize.INTEGER },
+      countryId: { type: Sequelize.INTEGER },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },
       updatedAt: {
         type: Sequelize.DATE,
