@@ -3,6 +3,7 @@ const Countries = (connection, Sequelize, Authors) => {
     id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
     name: { type: Sequelize.STRING, allowNull: false },
     capital: { type: Sequelize.STRING, allowNull: false },
+    city: { type: Sequelize.STRING },
     area: { type: Sequelize.STRING, allowNull: false },
     population: { type: Sequelize.STRING, allowNull: false },
     gdp: { type: Sequelize.STRING, allowNull: false },

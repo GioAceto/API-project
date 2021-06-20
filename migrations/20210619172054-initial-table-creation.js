@@ -29,6 +29,7 @@ module.exports = {
       id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
       name: { type: Sequelize.STRING },
       capital: { type: Sequelize.STRING },
+      city: { type: Sequelize.STRING },
       area: { type: Sequelize.STRING },
       population: { type: Sequelize.STRING },
       gdp: { type: Sequelize.STRING },

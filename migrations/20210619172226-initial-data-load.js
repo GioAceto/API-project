@@ -28,7 +28,6 @@ module.exports = {
 
       {
         name: 'The United States of America',
-        region: 'North America',
         capital: 'Washington DC',
         capital: 'Washington DC',
         city: 'New York City',
@@ -38,12 +37,11 @@ module.exports = {
         export: 'Refined petroleum',
         currency: 'US dollar',
         leader: 'Joseph Biden',
-        languageId: 1,
+        languagesId: 1,
         flag: 'us-flag.gif'
       },
       {
         name: 'Canada',
-        region: 'North America',
         capital: 'Ottawa',
         city: 'Toronto',
         area: '3,855,100',
@@ -52,12 +50,11 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Canadian dollar',
         leader: 'Justin Trudeau',
-        languageId: 1,
+        languagesId: 1,
         flag: 'ca-flag.gif'
       },
       {
         name: 'Mexico',
-        region: 'North America',
         capital: 'Mexico City',
         city: 'Mexico City',
         area: '761,606',
@@ -66,12 +63,11 @@ module.exports = {
         export: 'Automobiles',
         currency: 'Mexican peso',
         leader: 'Andrés Manuel López Obrador',
-        languageId: 2,
+        languagesId: 2,
         flag: 'mx-flag.gif'
       },
       {
         name: 'Belize',
-        region: 'Central America',
         capital: 'Belmopan',
         city: 'Belize City',
         area: '8,867',
@@ -80,26 +76,11 @@ module.exports = {
         export: 'Raw sugar',
         currency: 'Belize dollar',
         leader: 'Johnny Briceño',
-        languageId: 1,
-        flag: 'bh-flag.gif'
-      },
-      {
-        name: 'Belize',
-        region: 'Caribbean',
-        capital: 'Belmopan',
-        city: 'Belize City',
-        area: '8,867',
-        population: '390,353K',
-        gdp: '1.88B',
-        export: 'Raw sugar',
-        currency: 'Belize dollar',
-        leader: 'Johnny Briceño',
-        languageId: 1,
+        languagesId: 1,
         flag: 'bh-flag.gif'
       },
       {
         name: 'Costa Rica',
-        region: 'Central America',
         capital: 'San José',
         city: 'San José',
         area: '19,730',
@@ -108,12 +89,11 @@ module.exports = {
         export: 'Medical instruments',
         currency: 'Costa Rican colón',
         leader: 'Carlos Alvarado Quesada',
-        languageId: 2,
+        languagesId: 2,
         flag: 'cs-flag.gif'
       },
       {
         name: 'El Salvador',
-        region: 'Central America',
         capital: 'San Salvador',
         city: 'San Salvador',
         area: '8,124',
@@ -122,12 +102,11 @@ module.exports = {
         export: 'Clothing',
         currency: 'Salvadoran colón',
         leader: 'Carlos Alvarado Quesada',
-        languageId: 2,
+        languagesId: 2,
         flag: 'es-flag.gif'
       },
       {
         name: 'Guatemala',
-        region: 'Central America',
         capital: 'Guatemala City',
         city: 'Guatemala City',
         area: '42,042',
@@ -136,12 +115,11 @@ module.exports = {
         export: 'Bananas',
         currency: 'Guatemalan quetzal',
         leader: 'Alejandro Giammattei',
-        languageId: 2,
+        languagesId: 2,
         flag: 'gt-flag.gif'
       },
       {
         name: 'Honduras',
-        region: 'Central America',
         capital: 'Tegucigalpa',
         city: 'Tegucigalpa',
         area: '43,433',
@@ -150,12 +128,11 @@ module.exports = {
         export: 'Clothing',
         currency: 'Honduran lempira',
         leader: 'Juan Orlando Hernández',
-        languageId: 2,
+        languagesId: 2,
         flag: 'ho-flag.gif'
       },
       {
         name: 'Nicaragua',
-        region: 'Central America',
         capital: 'Managua',
         city: 'Managua',
         area: '50,336',
@@ -164,12 +141,11 @@ module.exports = {
         export: 'Clothing',
         currency: 'Nicaraguan córdoba',
         leader: 'Daniel Ortega',
-        language: 2,
+        languagesId: 2,
         flag: 'nu-flag.gif'
       },
       {
         name: 'Panama',
-        region: 'Central America',
         capital: 'Panama City',
         city: 'Panama City',
         area: '29,157',
@@ -178,12 +154,11 @@ module.exports = {
         export: 'Refined petroleum',
         currency: 'Panamanian balboa, US dollar',
         leader: 'Laurentino Cortizo',
-        languageId: 2,
+        languagesId: 2,
         flag: 'pm-flag.gif'
       },
       {
         name: 'Antigua and Barbuda',
-        region: 'Caribbean',
         capital: 'Saint John\'s',
         city: 'Saint John\'s',
         area: '108.5',
@@ -192,12 +167,11 @@ module.exports = {
         export: 'Passenger and cargo ships',
         currency: 'Eastern Caribbean dollar',
         leader: 'Gaston Browne',
-        languageId: 1,
+        languagesId: 1,
         flag: 'ac-flag.gif'
       },
       {
         name: 'The Bahamas',
-        region: 'Caribbean',
         capital: 'Nassau',
         city: 'Nassau',
         area: '5,358',
@@ -206,12 +180,11 @@ module.exports = {
         export: 'Passenger and cargo ships',
         currency: 'Bahamian dollar',
         leader: 'Hubert Minnis',
-        languageId: 1,
+        languagesId: 1,
         flag: 'bf-flag.gif'
       },
       {
         name: 'Barbados',
-        region: 'Caribbean',
         capital: 'Bridgetown',
         city: 'Bridgetown',
         area: '166.4',
@@ -220,12 +193,11 @@ module.exports = {
         export: 'Hard Liquor',
         currency: 'Barbadian dollar',
         leader: 'Mia Mottley',
-        languageId: 1,
+        languagesId: 1,
         flag: 'bb-flag.gif'
       },
       {
         name: 'Dominican Republic',
-        region: 'Caribbean',
         capital: 'Santo Domingo',
         city: 'Santo Domingo',
         area: '18,704',
@@ -234,12 +206,11 @@ module.exports = {
         export: 'Gold',
         currency: 'Dominican peso',
         leader: 'Luis Abinader',
-        languageId: 2,
+        languagesId: 2,
         flag: 'dr-flag.gif'
       },
       {
         name: 'Haiti',
-        region: 'Caribbean',
         capital: 'Port-au-Prince',
         city: 'Port-au-Prince',
         area: '10,714',
@@ -248,12 +219,11 @@ module.exports = {
         export: 'Clothing',
         currency: 'Haitian gourde',
         leader: 'Jovenel Moïse',
-        languageId: 3,
+        languagesId: 3,
         flag: 'ha-flag.gif'
       },
       {
         name: 'Cuba',
-        region: 'Caribbean',
         capital: 'Example',
         city: 'Havana',
         area: '42,426',
@@ -262,12 +232,11 @@ module.exports = {
         export: 'Rolled tobacco',
         currency: 'Cuban peso',
         leader: 'Miguel Díaz-Canel',
-        languageId: 2,
+        languagesId: 2,
         flag: 'cu-flag.gif'
       },
       {
         name: 'Dominica',
-        region: 'Caribbean',
         capital: 'Roseau',
         city: 'Roseau',
         area: '290',
@@ -276,12 +245,11 @@ module.exports = {
         export: 'Medical instruments',
         currency: 'Eastern Caribbean dollar',
         leader: 'Charles Savarin',
-        languageId: 1,
+        languagesId: 1,
         flag: 'do-flag.gif'
       },
       {
         name: 'Jamaica',
-        region: 'Caribbean',
         capital: 'Kingston',
         city: 'Kingston',
         area: '4,244',
@@ -290,12 +258,11 @@ module.exports = {
         export: 'Aluminum oxide',
         currency: 'Jamaican dollar',
         leader: 'Andrew Holness',
-        languageId: 1,
+        languagesId: 1,
         flag: 'jm-flag.gif'
       },
       {
         name: 'Grenada',
-        region: 'Caribbean',
         capital: 'Saint George\'s',
         city: 'Saint George\'s',
         area: '134.6',
@@ -304,12 +271,11 @@ module.exports = {
         export: 'Fish',
         currency: 'Eastern Caribbean dollar',
         leader: 'Keith Mitchell',
-        languageId: 1,
+        languagesId: 1,
         flag: 'gj-flag.gif'
       },
       {
         name: 'Trinidad and Tobago',
-        region: 'Caribbean',
         capital: 'Port of Spain',
         city: 'Chaguanas',
         area: '1,981',
@@ -318,12 +284,11 @@ module.exports = {
         export: 'Petroleum gas',
         currency: 'Trinidad and Tobago dollar',
         leader: 'Paula-Mae Weekes',
-        languageId: 1,
+        languagesId: 1,
         flag: 'td-flag.gif'
       },
       {
         name: 'Saint Kitts and Nevis',
-        region: 'Caribbean',
         capital: 'Basseterre',
         city: 'Basseterre',
         area: '100.8',
@@ -332,12 +297,11 @@ module.exports = {
         export: 'Low-voltage protection equipment',
         currency: 'Eastern Caribbean dollar',
         leader: 'Timothy Sylvester Harris',
-        languageId: 1,
+        languagesId: 1,
         flag: 'sc-flag.gif'
       },
       {
         name: 'Saint Lucia',
-        region: 'Caribbean',
         capital: 'Castries',
         city: 'Castries',
         area: '238.2',
@@ -346,12 +310,11 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Eastern Caribbean dollar',
         leader: 'Allen Michael Chastanet',
-        languageId: 1,
+        languagesId: 1,
         flag: 'st-flag.gif'
       },
       {
         name: 'Saint Vincent and the Grenadines',
-        region: 'Caribbean',
         capital: 'Kingstown',
         city: 'Kingstown',
         area: '150.2',
@@ -360,12 +323,11 @@ module.exports = {
         export: 'Petroleum gas',
         currency: 'Eastern Caribbean dollar',
         leader: 'Ralph Everard Gonsalves',
-        languageId: 1,
+        languagesId: 1,
         flag: 'vc-flag.gif'
       },
       {
         name: 'Argentina',
-        region: 'South America',
         capital: 'Buenos Aires',
         city: 'Buenos Aires',
         area: '1,073,500',
@@ -374,12 +336,11 @@ module.exports = {
         export: 'Soybean meal',
         currency: 'Argentine peso',
         leader: 'Alberto Fernández',
-        languageId: 2,
+        languagesId: 2,
         flag: 'ar-flag.gif'
       },
       {
         name: 'Bolivia',
-        region: 'South America',
         capital: 'La Paz, Sucre',
         city: 'Santa Cruz de la Sierra',
         area: '424,164',
@@ -388,12 +349,11 @@ module.exports = {
         export: 'Petroleum gas',
         currency: 'Bolivian boliviano',
         leader: 'Luis Arce',
-        languageId: 2,
+        languagesId: 2,
         flag: 'bl-flag.gif'
       },
       {
         name: 'Brazil',
-        region: 'South America',
         capital: 'Brasilia',
         city: 'São Paulo',
         area: '3,287,956',
@@ -402,12 +362,11 @@ module.exports = {
         export: 'Soybeans',
         currency: 'Brazilian real',
         leader: 'Jair Bolsonaro',
-        languageId: 5,
+        languagesId: 5,
         flag: 'br-flag.gif'
       },
       {
         name: 'Chile',
-        region: 'South America',
         capital: 'Santiago',
         city: 'Santiago',
         area: '291,933',
@@ -416,12 +375,11 @@ module.exports = {
         export: 'Copper ore',
         currency: 'Chilean peso',
         leader: 'Sebastián Piñera',
-        languageId: 2,
+        languagesId: 2,
         flag: 'ci-flag.gif'
       },
       {
         name: 'Colombia',
-        region: 'South America',
         capital: 'Bogotá',
         city: 'Bogotá',
         area: '440,831',
@@ -430,26 +388,11 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Colombian peso',
         leader: 'Iván Duque Márquez',
-        languageId: 2,
-        flag: 'co-flag.gif'
-      },
-      {
-        name: 'Colombia',
-        region: 'Caribbean',
-        capital: 'Bogotá',
-        city: 'Bogotá',
-        area: '440,831',
-        population: '50.34M',
-        gdp: '323.6B',
-        export: 'Crude petroleum',
-        currency: 'Colombian peso',
-        leader: 'Iván Duque Márquez',
-        languageId: 2,
+        languagesId: 2,
         flag: 'co-flag.gif'
       },
       {
         name: 'Ecuador',
-        region: 'South America',
         capital: 'Quito',
         city: 'Guayaquil',
         area: '106,889',
@@ -458,12 +401,11 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'US dollar',
         leader: 'Lenín Moreno',
-        languageId: 2,
+        languagesId: 2,
         flag: 'ec-flag.gif'
       },
       {
         name: 'Guyana',
-        region: 'South America',
         capital: 'Georgetown',
         city: 'Georgetown',
         area: '83,000',
@@ -472,26 +414,11 @@ module.exports = {
         export: 'Special purpose ships',
         currency: 'Guyanese dollar',
         leader: 'Irfaan Ali',
-        languageId: 1,
-        flag: 'gy-flag.gif'
-      },
-      {
-        name: 'Guyana',
-        region: 'Caribbean',
-        capital: 'Georgetown',
-        city: 'Georgetown',
-        area: '83,000',
-        population: '782,766',
-        gdp: '5.17B',
-        export: 'Special purpose ships',
-        currency: 'Guyanese dollar',
-        leader: 'Irfaan Ali',
-        languageId: 1,
+        languagesId: 1,
         flag: 'gy-flag.gif'
       },
       {
         name: 'Paraguay',
-        region: 'South America',
         capital: 'Asunción',
         city: 'Asunción',
         area: '157,048',
@@ -500,12 +427,11 @@ module.exports = {
         export: 'Soybeans',
         currency: 'Paraguayan guaraní',
         leader: 'Mario Abdo Benítez',
-        languageId: 6,
+        languagesId: 6,
         flag: 'pa-flag.gif'
       },
       {
         name: 'Peru',
-        region: 'South America',
         capital: 'Lima',
         city: 'Lima',
         area: '496,225',
@@ -514,12 +440,11 @@ module.exports = {
         export: 'Copper ore',
         currency: 'Nuevo sol',
         leader: 'Francisco Sagasti',
-        languageId: 2,
+        languagesId: 2,
         flag: 'pe-flag.gif'
       },
       {
         name: 'Suriname',
-        region: 'South America',
         capital: 'Paramaribo',
         city: 'Paramaribo',
         area: '63,250',
@@ -528,26 +453,11 @@ module.exports = {
         export: 'Gold',
         currency: 'Surinamese dollar',
         leader: 'Chan Santokhi',
-        languageId: 4,
-        flag: 'ns-flag.gif'
-      },
-      {
-        name: 'Suriname',
-        region: 'Caribbean',
-        capital: 'Paramaribo',
-        city: 'Paramaribo',
-        area: '63,250',
-        population: '581,363',
-        gdp: '3.69B',
-        export: 'Gold',
-        currency: 'Surinamese dollar',
-        leader: 'Chan Santokhi',
-        languageId: 4,
+        languagesId: 4,
         flag: 'ns-flag.gif'
       },
       {
         name: 'Uruguay',
-        region: 'South America',
         capital: 'Montevideo',
         city: 'Montevideo',
         area: '68,037',
@@ -556,12 +466,11 @@ module.exports = {
         export: 'Wood pulp',
         currency: 'Uruguayan peso',
         leader: 'Luis Lacalle Pou',
-        languageId: 2,
+        languagesId: 2,
         flag: 'uy-flag.gif'
       },
       {
         name: 'Venezuela',
-        region: 'South America',
         capital: 'Caracas',
         city: 'Caracas',
         area: '353,841',
@@ -570,23 +479,9 @@ module.exports = {
         export: 'Crude petroleum',
         currency: 'Bolívar soberano',
         leader: 'Nicolás Maduro, Juan Guaidó',
-        languageId: 2,
+        languagesId: 2,
         flag: 've-flag.gif'
       },
-      {
-        name: 'Venezuela',
-        region: 'Caribbean',
-        capital: 'Caracas',
-        city: 'Caracas',
-        area: '353,841',
-        population: '28.52M',
-        gdp: '482.4B',
-        export: 'Crude petroleum',
-        currency: 'Bolívar soberano',
-        leader: 'Nicolás Maduro, Juan Guaidó',
-        languageId: 2,
-        flag: 've-flag.gif'
-      }
     ])
 
     return queryInterface.bulkInsert('regionsCountries', [
@@ -594,14 +489,14 @@ module.exports = {
       { regionsId: 1, countriesId: 2 },
       { regionsId: 1, countriesId: 3 },
       { regionsId: 2, countriesId: 4 },
+      { regionsId: 3, countriesId: 4 },
+      { regionsId: 2, countriesId: 5 },
       { regionsId: 2, countriesId: 6 },
       { regionsId: 2, countriesId: 7 },
       { regionsId: 2, countriesId: 8 },
       { regionsId: 2, countriesId: 9 },
       { regionsId: 2, countriesId: 10 },
-      { regionsId: 2, countriesId: 11 },
-      { regionsId: 3, countriesId: 5 },
-      { regionsId: 3, countriesId: 5 },
+      { regionsId: 3, countriesId: 11 },
       { regionsId: 3, countriesId: 12 },
       { regionsId: 3, countriesId: 13 },
       { regionsId: 3, countriesId: 14 },
@@ -614,23 +509,23 @@ module.exports = {
       { regionsId: 3, countriesId: 21 },
       { regionsId: 3, countriesId: 22 },
       { regionsId: 3, countriesId: 23 },
-      { regionsId: 3, countriesId: 24 },
-      { regionsId: 3, countriesId: 30 },
-      { regionsId: 3, countriesId: 33 },
-      { regionsId: 3, countriesId: 37 },
-      { regionsId: 3, countriesId: 40 },
+      { regionsId: 4, countriesId: 24 },
       { regionsId: 4, countriesId: 25 },
       { regionsId: 4, countriesId: 26 },
       { regionsId: 4, countriesId: 27 },
+      { regionsId: 3, countriesId: 28 },
       { regionsId: 4, countriesId: 28 },
       { regionsId: 4, countriesId: 29 },
+      { regionsId: 3, countriesId: 30 },
+      { regionsId: 4, countriesId: 30 },
       { regionsId: 4, countriesId: 31 },
       { regionsId: 4, countriesId: 32 },
+      { regionsId: 3, countriesId: 33 },
+      { regionsId: 4, countriesId: 33 },
       { regionsId: 4, countriesId: 34 },
+      { regionsId: 3, countriesId: 35 },
       { regionsId: 4, countriesId: 35 },
-      { regionsId: 4, countriesId: 36 },
-      { regionsId: 4, countriesId: 38 },
-      { regionsId: 4, countriesId: 39 }
+
     ])
   },
 
