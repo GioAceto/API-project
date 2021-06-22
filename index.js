@@ -22,7 +22,8 @@ const { errorFunction,
   getMECountryByName,
   getAFCountryByName,
   getASCountryByName,
-  getOCCountryByName } = require('./controllers/cont-countries')
+  getOCCountryByName,
+  addNewCountry } = require('./controllers/cont-countries')
 
 const PORT = 1400
 const app = express()
@@ -56,6 +57,8 @@ app.get('/countries/asia/:name', getASCountryByName)
 app.get('/countries/oceania/:name', getOCCountryByName)
 
 app.get('*', errorFunction)
+
+app.post('/countries/europe', bodyParser.json(), addNewCountry)
 
 app.listen(PORT, () => {
   console.log(`Listening on http://localhost:${PORT}`) // eslint-disable-line no-console

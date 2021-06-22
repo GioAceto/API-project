@@ -306,6 +306,10 @@ const getOCCountryByName = async (req, res) => {
 
 }
 
+const addNewCountry = async (request, response) => {
+
+}
+
 module.exports = {
   errorFunction,
   getMain,
@@ -329,4 +333,5 @@ module.exports = {
   getAFCountryByName,
   getASCountryByName,
   getOCCountryByName,
+  addNewCountry
 }
