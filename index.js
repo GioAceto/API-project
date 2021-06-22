@@ -14,7 +14,15 @@ const { errorFunction,
   getASCountries,
   getOCCountries,
   getCountryByName,
-  getNACountryByName } = require('./controllers/cont-countries')
+  getNACountryByName,
+  getCACountryByName,
+  getCRCountryByName,
+  getSACountryByName,
+  getEUCountryByName,
+  getMECountryByName,
+  getAFCountryByName,
+  getASCountryByName,
+  getOCCountryByName } = require('./controllers/cont-countries')
 
 const PORT = 1400
 const app = express()
@@ -38,6 +46,14 @@ app.get('/countries/oceania', getOCCountries)
 
 app.get('/countries/:name', getCountryByName)
 app.get('/countries/north_america/:name', getNACountryByName)
+app.get('/countries/central_america/:name', getCACountryByName)
+app.get('/countries/caribbean/:name', getCRCountryByName)
+app.get('/countries/south_america/:name', getSACountryByName)
+app.get('/countries/europe/:name', getEUCountryByName)
+app.get('/countries/middle_east/:name', getMECountryByName)
+app.get('/countries/africa/:name', getAFCountryByName)
+app.get('/countries/asia/:name', getASCountryByName)
+app.get('/countries/oceania/:name', getOCCountryByName)
 
 app.get('*', errorFunction)
 
