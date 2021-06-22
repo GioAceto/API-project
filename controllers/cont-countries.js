@@ -135,6 +135,25 @@ const getCountryByName = async (req, res) => {
 
 }
 
+const getNACountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'North America' }
+    }]
+  })
+
+  return res.render('north_america', { countries })
+
+}
+
 module.exports = {
   errorFunction,
   getMain,
@@ -148,5 +167,6 @@ module.exports = {
   getAFCountries,
   getASCountries,
   getOCCountries,
-  getCountryByName
+  getCountryByName,
+  getNACountryByName
 }
