@@ -22,7 +22,7 @@ module.exports = {
       area: { type: Sequelize.STRING },
       population: { type: Sequelize.STRING },
       gdp: { type: Sequelize.STRING },
-      export: { type: Sequelize.STRING },
+      topExport: { type: Sequelize.STRING },
       currency: { type: Sequelize.STRING },
       leader: { type: Sequelize.STRING },
       language: { type: Sequelize.STRING },

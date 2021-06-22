@@ -306,8 +306,16 @@ const getOCCountryByName = async (req, res) => {
 
 }
 
-const addNewCountry = async (request, response) => {
+const addNewCountry = async (req, res) => {
+  const { name, region, capital, city, area, population, gdp, topExport, currency, leader, language, flag } = req.body
 
+  if (!name || !region || !capital || !city || !area || !population || !gdp || !topExport || !currency || leader || language || flag) {
+    return req.status(400).send('The following fields are required:')
+  }
+
+  const newCountry = await models.heroes.create({ name, realname, firstappearance, slug })
+
+  return response.status(201).send(newCountry)
 }
 
 module.exports = {
