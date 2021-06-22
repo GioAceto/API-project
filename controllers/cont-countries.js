@@ -8,7 +8,7 @@ const getMain = (req, res) => {
   res.render('index')
 }
 
-const getAllCountries = async (req, res) => {
+const renderAllCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [
       {
@@ -18,6 +18,44 @@ const getAllCountries = async (req, res) => {
   })
 
   return res.render('countries', { countries })
+}
+
+const getAllCountries = async (req, res) => {
+  const countries = await models.Countries.findAll({
+    include: [{ model: models.Regions }]
+  })
+
+  return res.send(countries)
+}
+
+const getCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{ model: models.Regions }]
+  })
+
+  return res.send(countries)
+
+}
+
+
+const getCountryByRegionId = async (req, res) => {
+  const { id } = req.params
+  const countries = await models.Countries.findAll({
+    include: [
+      {
+        model: models.Regions,
+        where: { id }
+      }
+    ]
+  })
+  return res.send(countries)
 }
 
 const getNACountries = async (req, res) => {
@@ -119,7 +157,7 @@ const getOCCountries = async (req, res) => {
   return res.render('oceania', { countries })
 }
 
-const getCountryByName = async (req, res) => {
+const renderCountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -306,22 +344,35 @@ const getOCCountryByName = async (req, res) => {
 
 }
 
-const addNewCountry = async (req, res) => {
-  const { name, region, capital, city, area, population, gdp, topExport, currency, leader, language, flag } = req.body
+const Regions = models.Regions
 
-  if (!name || !region || !capital || !city || !area || !population || !gdp || !topExport || !currency || leader || language || flag) {
-    return req.status(400).send('The following fields are required:')
+const addNewEUCountry = async (req, res) => {
+  const { name, capital, city, area, population, gdp, topExport, currency, leader, language, flag, regions } = req.body
+
+  console.log(regions)
+
+  if (!name || !capital || !city || !area || !population || !gdp || !topExport || !currency || !leader || !language || !flag || !regions) {
+    return req.status(400).send('The following fields are required: name, region, capital, city, area, population, gdp, topExport, currency, leader, language, flag')
   }
 
-  const newCountry = await models.heroes.create({ name, realname, firstappearance, slug })
+  console.log({ ...req.body })
 
-  return response.status(201).send(newCountry)
+  const newCountry = await models.Countries.create(
+    req.body,
+    {
+      include: [{ model: models.Regions }],
+      validate: false
+    })
+
+
+  return res.status(201).send(newCountry)
 }
+
 
 module.exports = {
   errorFunction,
   getMain,
-  getAllCountries,
+  renderAllCountries,
   getNACountries,
   getCACountries,
   getCRCountries,
@@ -331,7 +382,7 @@ module.exports = {
   getAFCountries,
   getASCountries,
   getOCCountries,
-  getCountryByName,
+  renderCountryByName,
   getNACountryByName,
   getCACountryByName,
   getCRCountryByName,
@@ -341,5 +392,8 @@ module.exports = {
   getAFCountryByName,
   getASCountryByName,
   getOCCountryByName,
-  addNewCountry
+  addNewEUCountry,
+  getAllCountries,
+  getCountryByName,
+  getCountryByRegionId
 }

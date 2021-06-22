@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const countries = require('./countries')
 const { errorFunction,
   getMain,
-  getAllCountries,
+  renderAllCountries,
   getNACountries,
   getCACountries,
   getCRCountries,
@@ -13,7 +13,7 @@ const { errorFunction,
   getAFCountries,
   getASCountries,
   getOCCountries,
-  getCountryByName,
+  renderCountryByName,
   getNACountryByName,
   getCACountryByName,
   getCRCountryByName,
@@ -23,7 +23,11 @@ const { errorFunction,
   getAFCountryByName,
   getASCountryByName,
   getOCCountryByName,
-  addNewCountry } = require('./controllers/cont-countries')
+  addNewEUCountry,
+  getAllCountries,
+  getCountryByName,
+  getCountryByRegionId
+} = require('./controllers/cont-countries')
 
 const PORT = 1400
 const app = express()
@@ -34,7 +38,7 @@ app.use(express.static('public'))
 
 app.get('/', getMain)
 
-app.get('/countries/', getAllCountries)
+app.get('/countries/', renderAllCountries)
 app.get('/countries/north_america', getNACountries)
 app.get('/countries/central_america', getCACountries)
 app.get('/countries/caribbean', getCRCountries)
@@ -45,7 +49,7 @@ app.get('/countries/africa', getAFCountries)
 app.get('/countries/asia', getASCountries)
 app.get('/countries/oceania', getOCCountries)
 
-app.get('/countries/:name', getCountryByName)
+app.get('/countries/:name', renderCountryByName)
 app.get('/countries/north_america/:name', getNACountryByName)
 app.get('/countries/central_america/:name', getCACountryByName)
 app.get('/countries/caribbean/:name', getCRCountryByName)
@@ -56,9 +60,13 @@ app.get('/countries/africa/:name', getAFCountryByName)
 app.get('/countries/asia/:name', getASCountryByName)
 app.get('/countries/oceania/:name', getOCCountryByName)
 
+app.get('/api/countries/', getAllCountries)
+app.get('/api/countries/:name', getCountryByName)
+app.get('/api/region/:id', getCountryByRegionId)
+
 app.get('*', errorFunction)
 
-app.post('/countries/europe', bodyParser.json(), addNewCountry)
+app.post('/countries/europe', bodyParser.json(), addNewEUCountry)
 
 app.listen(PORT, () => {
   console.log(`Listening on http://localhost:${PORT}`) // eslint-disable-line no-console
