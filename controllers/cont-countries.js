@@ -154,6 +154,158 @@ const getNACountryByName = async (req, res) => {
 
 }
 
+const getCACountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Central America' }
+    }]
+  })
+
+  return res.render('central_america', { countries })
+
+}
+
+const getCRCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Caribbean' }
+    }]
+  })
+
+  return res.render('caribbean', { countries })
+
+}
+
+const getSACountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'South America' }
+    }]
+  })
+
+  return res.render('south_america', { countries })
+
+}
+
+const getEUCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Europe' }
+    }]
+  })
+
+  return res.render('europe', { countries })
+
+}
+
+const getMECountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Middle East' }
+    }]
+  })
+
+  return res.render('middle_east', { countries })
+
+}
+
+const getAFCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Africa' }
+    }]
+  })
+
+  return res.render('africa', { countries })
+
+}
+
+const getASCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Asia' }
+    }]
+  })
+
+  return res.render('asia', { countries })
+
+}
+
+const getOCCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{
+      model: models.Regions,
+      where: { region: 'Oceania' }
+    }]
+  })
+
+  return res.render('oceania', { countries })
+
+}
+
 module.exports = {
   errorFunction,
   getMain,
@@ -168,5 +320,13 @@ module.exports = {
   getASCountries,
   getOCCountries,
   getCountryByName,
-  getNACountryByName
+  getNACountryByName,
+  getCACountryByName,
+  getCRCountryByName,
+  getSACountryByName,
+  getEUCountryByName,
+  getMECountryByName,
+  getAFCountryByName,
+  getASCountryByName,
+  getOCCountryByName,
 }
