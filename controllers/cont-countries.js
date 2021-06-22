@@ -28,7 +28,7 @@ const getNACountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('north_america', { countries })
 }
 
 const getCACountries = async (req, res) => {
@@ -39,7 +39,7 @@ const getCACountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('central_america', { countries })
 }
 
 const getCRCountries = async (req, res) => {
@@ -50,7 +50,7 @@ const getCRCountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('caribbean', { countries })
 }
 
 const getSACountries = async (req, res) => {
@@ -61,7 +61,7 @@ const getSACountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('south_america', { countries })
 }
 
 const getEUCountries = async (req, res) => {
@@ -72,7 +72,7 @@ const getEUCountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('europe', { countries })
 }
 
 const getMECountries = async (req, res) => {
@@ -83,7 +83,7 @@ const getMECountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('middle_east', { countries })
 }
 
 const getAFCountries = async (req, res) => {
@@ -94,7 +94,7 @@ const getAFCountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('africa', { countries })
 }
 
 const getASCountries = async (req, res) => {
@@ -105,7 +105,7 @@ const getASCountries = async (req, res) => {
     }]
   })
 
-  return res.render('countries', { countries })
+  return res.render('asia', { countries })
 }
 
 const getOCCountries = async (req, res) => {
@@ -116,7 +116,23 @@ const getOCCountries = async (req, res) => {
     }]
   })
 
+  return res.render('oceania', { countries })
+}
+
+const getCountryByName = async (req, res) => {
+  const { name } = req.params
+
+  const countries = await models.Countries.findAll({
+    where: {
+      [models.Sequelize.Op.or]: [
+        { name: { [models.Sequelize.Op.like]: `%${name}%` } },
+      ]
+    },
+    include: [{ model: models.Regions }]
+  })
+
   return res.render('countries', { countries })
+
 }
 
 module.exports = {
@@ -131,5 +147,6 @@ module.exports = {
   getMECountries,
   getAFCountries,
   getASCountries,
-  getOCCountries
+  getOCCountries,
+  getCountryByName
 }
