@@ -8,18 +8,6 @@ const getMain = (req, res) => {
   res.render('index')
 }
 
-const renderAllCountries = async (req, res) => {
-  const countries = await models.Countries.findAll({
-    include: [
-      {
-        model: models.Regions
-      }
-    ]
-  })
-
-  return res.render('countries', { countries })
-}
-
 const getAllCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{ model: models.Regions }]
@@ -44,7 +32,6 @@ const getCountryByName = async (req, res) => {
 
 }
 
-
 const getCountryByRegionId = async (req, res) => {
   const { id } = req.params
   const countries = await models.Countries.findAll({
@@ -56,6 +43,18 @@ const getCountryByRegionId = async (req, res) => {
     ]
   })
   return res.send(countries)
+}
+
+const renderAllCountries = async (req, res) => {
+  const countries = await models.Countries.findAll({
+    include: [
+      {
+        model: models.Regions
+      }
+    ]
+  })
+
+  return res.render('countries', { countries })
 }
 
 const renderNACountries = async (req, res) => {
