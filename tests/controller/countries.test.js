@@ -55,4 +55,17 @@ describe('Controllers - countries', () => {
       expect(stubbedSend).to.have.been.calledWith(allCountries)
     })
   })
+
+  describe('addNewCountry', () => {
+    it('accepts new country details and saves them as a new country, returning the saved record with a 201 status', async () => {
+      const request = { body: singleCountry }
+      const stubbedCreate = sinon.stub(models.Countries, 'create').returns(singleCountry)
+
+      await addNewCountry(request, response)
+
+      expect(stubbedCreate).to.have.been.calledWith(singleCountry)
+      expect(stubbedStatus).to.have.been.calledWith(201)
+      expect(stubbedStatusSend).to.have.been.calledWith(singleCountry)
+    })
+  })
 })
