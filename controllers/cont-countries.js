@@ -346,27 +346,58 @@ const getOCCountryByName = async (req, res) => {
 
 const Regions = models.Regions
 
-const addNewEUCountry = async (req, res) => {
-  const { name, capital, city, area, population, gdp, topExport, currency, leader, language, flag, regions } = req.body
-
-  console.log(regions)
-
-  if (!name || !capital || !city || !area || !population || !gdp || !topExport || !currency || !leader || !language || !flag || !regions) {
-    return req.status(400).send('The following fields are required: name, region, capital, city, area, population, gdp, topExport, currency, leader, language, flag')
+const addNewCountry = async (req, res) => {
+  const {
+    name,
+    capital,
+    city,
+    area,
+    population,
+    gdp,
+    topExport,
+    currency,
+    leader,
+    language,
+    flag,
+    regions,
+  } = req.body;
+  if (
+    !name ||
+    !capital ||
+    !city ||
+    !area ||
+    !population ||
+    !gdp ||
+    !topExport ||
+    !currency ||
+    !leader ||
+    !language ||
+    !flag ||
+    !regions
+  ) {
+    return res
+      .status(400)
+      .send(
+        "The following fields are required: name, region, capital, city, area, population, gdp, topExport, currency, leader, language, flag"
+      );
   }
-
-  console.log({ ...req.body })
-
-  const newCountry = await models.Countries.create(
-    req.body,
-    {
-      include: [{ model: models.Regions }],
-      validate: false
+  const { regions: regionsData, ...countryData } = req.body;
+  const newRegions = [];
+  regionsData.forEach((region) => {
+    newRegions.push(region.id);
+  });
+  const newCountry = await models.Countries.create(countryData)
+    .then(country => {
+      let { dataValues } = country
+      let newCountryId = dataValues.id
+      newRegions.forEach(async (region) => {
+        const regionCountry = { regionId: region, countryId: newCountryId }
+        await models.RegionsCountries.create(regionCountry).then().catch(err => console.log(err))
+      })
     })
-
-
-  return res.status(201).send(newCountry)
-}
+    .catch((err) => console.log(err))
+  return res.status(201).send(newCountry);
+};
 
 
 module.exports = {
@@ -392,8 +423,8 @@ module.exports = {
   getAFCountryByName,
   getASCountryByName,
   getOCCountryByName,
-  addNewEUCountry,
   getAllCountries,
   getCountryByName,
-  getCountryByRegionId
+  getCountryByRegionId,
+  addNewCountry
 }
