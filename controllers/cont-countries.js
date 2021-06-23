@@ -381,24 +381,21 @@ const addNewCountry = async (req, res) => {
         "The following fields are required: name, region, capital, city, area, population, gdp, topExport, currency, leader, language, flag"
       );
   }
-  const { regions: regionsData, ...countryData } = req.body;
-  const newRegions = [];
-  regionsData.forEach((region) => {
-    newRegions.push(region.id);
-  });
-  const newCountry = await models.Countries.create(countryData)
-    .then(country => {
-      let { dataValues } = country
-      let newCountryId = dataValues.id
-      newRegions.forEach(async (region) => {
-        const regionCountry = { regionId: region, countryId: newCountryId }
-        await models.RegionsCountries.create(regionCountry).then().catch(err => console.log(err))
-      })
-    })
-    .catch((err) => console.log(err))
-  return res.status(201).send(newCountry);
-};
 
+  const { regions: regionsData, ...countryData } = req.body;
+  const newRegions = regionsData.map((region) => region.id);
+  const newCountry = await models.Countries.create(countryData)
+    .then(({ dataValues: { id: newCountryId } }) => {
+      newRegions.forEach(async (region) => {
+        const regionCountry = { regionId: region, countryId: newCountryId };
+        await models.RegionsCountries.create(regionCountry)
+          .then()
+          .catch((err) => console.log(err));
+      });
+    })
+    .catch((err) => console.log(err));
+  return res.status(201).send(newCountry);
+}
 
 module.exports = {
   errorFunction,
