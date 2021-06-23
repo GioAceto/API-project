@@ -58,7 +58,7 @@ const getCountryByRegionId = async (req, res) => {
   return res.send(countries)
 }
 
-const getNACountries = async (req, res) => {
+const renderNACountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -69,7 +69,7 @@ const getNACountries = async (req, res) => {
   return res.render('north_america', { countries })
 }
 
-const getCACountries = async (req, res) => {
+const renderCACountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -80,7 +80,7 @@ const getCACountries = async (req, res) => {
   return res.render('central_america', { countries })
 }
 
-const getCRCountries = async (req, res) => {
+const renderCRCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -91,7 +91,7 @@ const getCRCountries = async (req, res) => {
   return res.render('caribbean', { countries })
 }
 
-const getSACountries = async (req, res) => {
+const renderSACountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -102,7 +102,7 @@ const getSACountries = async (req, res) => {
   return res.render('south_america', { countries })
 }
 
-const getEUCountries = async (req, res) => {
+const renderEUCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -113,7 +113,7 @@ const getEUCountries = async (req, res) => {
   return res.render('europe', { countries })
 }
 
-const getMECountries = async (req, res) => {
+const renderMECountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -124,7 +124,7 @@ const getMECountries = async (req, res) => {
   return res.render('middle_east', { countries })
 }
 
-const getAFCountries = async (req, res) => {
+const renderAFCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -135,7 +135,7 @@ const getAFCountries = async (req, res) => {
   return res.render('africa', { countries })
 }
 
-const getASCountries = async (req, res) => {
+const renderASCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -146,7 +146,7 @@ const getASCountries = async (req, res) => {
   return res.render('asia', { countries })
 }
 
-const getOCCountries = async (req, res) => {
+const renderOCCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
@@ -173,7 +173,7 @@ const renderCountryByName = async (req, res) => {
 
 }
 
-const getNACountryByName = async (req, res) => {
+const renderNACountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -192,7 +192,7 @@ const getNACountryByName = async (req, res) => {
 
 }
 
-const getCACountryByName = async (req, res) => {
+const renderCACountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -211,7 +211,7 @@ const getCACountryByName = async (req, res) => {
 
 }
 
-const getCRCountryByName = async (req, res) => {
+const renderCRCountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -230,7 +230,7 @@ const getCRCountryByName = async (req, res) => {
 
 }
 
-const getSACountryByName = async (req, res) => {
+const renderSACountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -249,7 +249,7 @@ const getSACountryByName = async (req, res) => {
 
 }
 
-const getEUCountryByName = async (req, res) => {
+const renderEUCountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -268,7 +268,7 @@ const getEUCountryByName = async (req, res) => {
 
 }
 
-const getMECountryByName = async (req, res) => {
+const renderMECountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -287,7 +287,7 @@ const getMECountryByName = async (req, res) => {
 
 }
 
-const getAFCountryByName = async (req, res) => {
+const renderAFCountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -306,7 +306,7 @@ const getAFCountryByName = async (req, res) => {
 
 }
 
-const getASCountryByName = async (req, res) => {
+const renderASCountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -325,7 +325,7 @@ const getASCountryByName = async (req, res) => {
 
 }
 
-const getOCCountryByName = async (req, res) => {
+const renderOCCountryByName = async (req, res) => {
   const { name } = req.params
 
   const countries = await models.Countries.findAll({
@@ -401,27 +401,27 @@ module.exports = {
   errorFunction,
   getMain,
   renderAllCountries,
-  getNACountries,
-  getCACountries,
-  getCRCountries,
-  getSACountries,
-  getEUCountries,
-  getMECountries,
-  getAFCountries,
-  getASCountries,
-  getOCCountries,
+  renderNACountries,
+  renderCACountries,
+  renderCRCountries,
+  renderSACountries,
+  renderEUCountries,
+  renderMECountries,
+  renderAFCountries,
+  renderASCountries,
+  renderOCCountries,
   renderCountryByName,
-  getNACountryByName,
-  getCACountryByName,
-  getCRCountryByName,
-  getSACountryByName,
-  getEUCountryByName,
-  getMECountryByName,
-  getAFCountryByName,
-  getASCountryByName,
-  getOCCountryByName,
+  renderNACountryByName,
+  renderCACountryByName,
+  renderCRCountryByName,
+  renderSACountryByName,
+  renderEUCountryByName,
+  renderMECountryByName,
+  renderAFCountryByName,
+  renderASCountryByName,
+  renderOCCountryByName,
   getAllCountries,
   getCountryByName,
   getCountryByRegionId,
-  addNewCountry
+  addNewCountry,
 }

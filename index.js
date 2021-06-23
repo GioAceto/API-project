@@ -4,25 +4,25 @@ const countries = require('./countries')
 const { errorFunction,
   getMain,
   renderAllCountries,
-  getNACountries,
-  getCACountries,
-  getCRCountries,
-  getSACountries,
-  getEUCountries,
-  getMECountries,
-  getAFCountries,
-  getASCountries,
-  getOCCountries,
+  renderNACountries,
+  renderCACountries,
+  renderCRCountries,
+  renderSACountries,
+  renderEUCountries,
+  renderMECountries,
+  renderAFCountries,
+  renderASCountries,
+  renderOCCountries,
   renderCountryByName,
-  getNACountryByName,
-  getCACountryByName,
-  getCRCountryByName,
-  getSACountryByName,
-  getEUCountryByName,
-  getMECountryByName,
-  getAFCountryByName,
-  getASCountryByName,
-  getOCCountryByName,
+  renderNACountryByName,
+  renderCACountryByName,
+  renderCRCountryByName,
+  renderSACountryByName,
+  renderEUCountryByName,
+  renderMECountryByName,
+  renderAFCountryByName,
+  renderASCountryByName,
+  renderOCCountryByName,
   addNewCountry,
   getAllCountries,
   getCountryByName,
@@ -41,36 +41,37 @@ app.get('/', getMain)
 app.get('/countries/', renderAllCountries)
 app.get('/countries/:name', renderCountryByName)
 
-app.get('/region/north_america', getNACountries)
-app.get('/region/north_america/:name', getNACountryByName)
+app.get('/region/north_america', renderNACountries)
+app.get('/region/north_america/:name', renderNACountryByName)
 
-app.get('/region/central_america', getCACountries)
-app.get('/region/central_america/:name', getCACountryByName)
+app.get('/region/central_america', renderCACountries)
+app.get('/region/central_america/:name', renderCACountryByName)
 
-app.get('/region/caribbean', getCRCountries)
-app.get('/region/caribbean/:name', getCRCountryByName)
+app.get('/region/caribbean', renderCRCountries)
+app.get('/region/caribbean/:name', renderCRCountryByName)
 
-app.get('/region/south_america', getSACountries)
-app.get('/region/south_america/:name', getSACountryByName)
+app.get('/region/south_america', renderSACountries)
+app.get('/region/south_america/:name', renderSACountryByName)
 
-app.get('/region/europe', getEUCountries)
-app.get('/region/europe/:name', getEUCountryByName)
+app.get('/region/europe', renderEUCountries)
+app.get('/region/europe/:name', renderEUCountryByName)
 
-app.get('/region/middle_east', getMECountries)
-app.get('/region/middle_east/:name', getMECountryByName)
+app.get('/region/middle_east', renderMECountries)
+app.get('/region/middle_east/:name', renderMECountryByName)
 
-app.get('/region/africa', getAFCountries)
-app.get('/region/africa/:name', getAFCountryByName)
+app.get('/region/africa', renderAFCountries)
+app.get('/region/africa/:name', renderAFCountryByName)
 
-app.get('/region/asia', getASCountries)
-app.get('/region/asia/:name', getASCountryByName)
+app.get('/region/asia', renderASCountries)
+app.get('/region/asia/:name', renderASCountryByName)
 
-app.get('/region/oceania', getOCCountries)
-app.get('/region/oceania/:name', getOCCountryByName)
+app.get('/region/oceania', renderOCCountries)
+app.get('/region/oceania/:name', renderOCCountryByName)
 
 app.get('/api/countries/', getAllCountries)
 app.get('/api/countries/:name', getCountryByName)
 app.get('/api/region/:id', getCountryByRegionId)
+
 
 app.get('*', errorFunction)
 
