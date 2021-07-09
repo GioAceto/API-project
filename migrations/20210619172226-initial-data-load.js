@@ -70,6 +70,7 @@ module.exports = {
         language: 'English',
         flag: 'bh-flag.gif'
       },
+      //5
       {
         name: 'Costa Rica',
         capital: 'San José',
@@ -239,6 +240,7 @@ module.exports = {
         language: 'English',
         flag: 'do-flag.gif'
       },
+      //18
       {
         name: 'Jamaica',
         capital: 'Kingston',
@@ -304,6 +306,7 @@ module.exports = {
         language: 'English',
         flag: 'st-flag.gif'
       },
+      //23
       {
         name: 'Saint Vincent and the Grenadines',
         capital: 'Kingstown',
@@ -395,6 +398,7 @@ module.exports = {
         language: 'Spanish',
         flag: 'ec-flag.gif'
       },
+      //30
       {
         name: 'Guyana',
         capital: 'Georgetown',
@@ -473,6 +477,7 @@ module.exports = {
         language: 'Spanish',
         flag: 've-flag.gif'
       },
+      //36
       {
         name: 'Russia',
         capital: 'Moscow',
@@ -1088,7 +1093,51 @@ module.exports = {
       { regionId: 4, countryId: 34 },
       { regionId: 3, countryId: 35 },
       { regionId: 4, countryId: 35 },
-
+      { regionId: 5, countryId: 36 },
+      { regionId: 8, countryId: 36 },
+      { regionId: 5, countryId: 37 },
+      { regionId: 5, countryId: 38 },
+      { regionId: 5, countryId: 39 },
+      { regionId: 5, countryId: 40 },
+      { regionId: 5, countryId: 41 },
+      { regionId: 5, countryId: 42 },
+      { regionId: 5, countryId: 43 },
+      { regionId: 5, countryId: 44 },
+      { regionId: 5, countryId: 45 },
+      { regionId: 5, countryId: 46 },
+      { regionId: 5, countryId: 47 },
+      { regionId: 5, countryId: 48 },
+      { regionId: 5, countryId: 49 },
+      { regionId: 5, countryId: 50 },
+      { regionId: 5, countryId: 51 },
+      { regionId: 5, countryId: 52 },
+      { regionId: 5, countryId: 53 },
+      { regionId: 5, countryId: 54 },
+      { regionId: 5, countryId: 55 },
+      { regionId: 5, countryId: 56 },
+      { regionId: 5, countryId: 57 },
+      { regionId: 5, countryId: 58 },
+      { regionId: 5, countryId: 59 },
+      { regionId: 5, countryId: 60 },
+      { regionId: 5, countryId: 61 },
+      { regionId: 5, countryId: 62 },
+      { regionId: 5, countryId: 63 },
+      { regionId: 5, countryId: 64 },
+      { regionId: 5, countryId: 65 },
+      { regionId: 5, countryId: 66 },
+      { regionId: 5, countryId: 67 },
+      { regionId: 5, countryId: 68 },
+      { regionId: 5, countryId: 69 },
+      { regionId: 5, countryId: 70 },
+      { regionId: 5, countryId: 71 },
+      { regionId: 5, countryId: 72 },
+      { regionId: 5, countryId: 73 },
+      { regionId: 5, countryId: 74 },
+      { regionId: 5, countryId: 75 },
+      { regionId: 5, countryId: 76 },
+      { regionId: 5, countryId: 77 },
+      { regionId: 5, countryId: 78 },
+      { regionId: 5, countryId: 79 },
     ])
   },
 
