@@ -1046,7 +1046,7 @@ module.exports = {
         gdp: '21.2M',
         topExport: 'N/A',
         currency: 'Euro',
-        leader: '',
+        leader: 'Pope Francis',
         language: 'Italian',
         flag: 'vt-flag.gif'
       },
