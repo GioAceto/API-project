@@ -16,10 +16,12 @@ html(lang="en")
         table
           for country in countries
             tr
-              th(colspan="2")= country.name
+              th(colspan="3")= country.name
                 tr
                   td Capital:
                   td=country.capital
+                  td(class="flag-column" rowspan="9")
+                    img(class="flag" src="/images/" + country.flag)
                 tr
                   td Total Land Area (miles²):
                   td=country.area
@@ -31,7 +33,7 @@ html(lang="en")
                   td=country.gdp
                 tr
                   td Top Export:
-                  td=country.export
+                  td=country.topExport
                 tr
                   td Most Populous City:
                   td=country.city
@@ -42,5 +44,5 @@ html(lang="en")
                   td Currency:
                   td=country.currency
                 tr(class="last")
-                  td Flag:
-                  td=country.flag
+                  td Most Spoken Language:
+                  td=country.language
