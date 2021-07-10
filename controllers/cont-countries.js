@@ -116,7 +116,7 @@ const renderMECountries = async (req, res) => {
   const countries = await models.Countries.findAll({
     include: [{
       model: models.Regions,
-      where: { region: 'Middle_East' }
+      where: { region: 'Middle East' }
     }]
   })
 
