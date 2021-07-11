@@ -263,11 +263,14 @@ td:first-child {
 }
 
 .flag-column {
-  width: 400px;
+  text-align: center;
+  width: 380px;
+  height: 220px;
 }
 
 .flag {
-  width: 400px;
+  max-width: 380px;
+  max-height: 220px;
 }
 
 #post-req p {
