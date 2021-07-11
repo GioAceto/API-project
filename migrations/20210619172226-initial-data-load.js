@@ -2528,7 +2528,7 @@ module.exports = {
       { regionId: 8, countryId: 141 },
       { regionId: 5, countryId: 142 },
       { regionId: 7, countryId: 142 },
-      { regionId: 7, countryId: 135 },
+      { regionId: 7, countryId: 143 },
       { regionId: 8, countryId: 143 },
       { regionId: 8, countryId: 144 },
       { regionId: 8, countryId: 145 },
