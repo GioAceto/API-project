@@ -2765,7 +2765,21 @@ module.exports = {
       { regionId: 7, countryId: 178 },
       { regionId: 8, countryId: 179 },
       { regionId: 8, countryId: 180 },
-      { regionId: 8, countryId: 181 }
+      { regionId: 8, countryId: 181 },
+      { regionId: 9, countryId: 182 },
+      { regionId: 9, countryId: 183 },
+      { regionId: 9, countryId: 184 },
+      { regionId: 9, countryId: 185 },
+      { regionId: 9, countryId: 186 },
+      { regionId: 9, countryId: 187 },
+      { regionId: 9, countryId: 188 },
+      { regionId: 9, countryId: 189 },
+      { regionId: 9, countryId: 190 },
+      { regionId: 9, countryId: 191 },
+      { regionId: 9, countryId: 192 },
+      { regionId: 9, countryId: 193 },
+      { regionId: 9, countryId: 194 },
+      { regionId: 9, countryId: 195 }
     ])
   },
 
