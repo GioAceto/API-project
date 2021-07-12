@@ -48,65 +48,75 @@ html(lang="en")
             aside(class="doc-aside1")
               p(class="sub-heading response-heading") Response
               p [
-              p {
-              p id: 3,
-              p name: "Mexico",
-              p capital: "Mexico City",
-              p city: "Mexico City",
-              p area: "761,606",
-              p population: "127.6M",
-              p gdp: "1.27T",
-              p topExport: "Automobiles",
-              p currency: "Mexican Peso",
-              p leader: "Andrés Manuel López Obrador",
-              p flag: "mx-flag.gif"
-              p "CreatedAt": "2021-05-00T00:00:00.0000"
-              p "UpdatedAt": "2021-05-00T00:00:00.0000"
-              p regions: [
-              p {
-              p id: 1,
-              p region: "North America",
-              p createdAt: "2021-05-00T00:00:00.0000"
-              p updatedAt: "2021-05-00T00:00:00.0000"
-              p regionsCountries: {
-              p regionId: 1,
-              p countryId: 3,
-              p createdAt: "2021-05-00T00:00:00.0000"
-              p updatedAt: "2021-05-00T00:00:00.0000"
-              p }
-              p }
-              p ]
-              p },
-              p {
-              p id: 27,
-              p name: "Chile",
-              p capital: "Santiago",
-              p city: "Santiago",
-              p area: "291,933",
-              p population: "18.95M",
-              p gdp: "282.3B",
-              p topExport: "Copper ore",
-              p currency: "Chilean peso",
-              p leader: "Sebastián Piñera",
-              p language: "Spanish",
-              p flag: "ci-flag.gif",
-              p createdAt: "2021-06-22T19:37:06.000Z",
-              p updatedAt: "2021-06-22T19:37:06.000Z",
-              p regions: [
-              p {
-              p id: 4,
-              p region: "South America",
-              p createdAt: "2021-06-22T19:37:06.000Z",
-              p updatedAt: "2021-06-22T19:37:06.000Z",
-              p regionsCountries: {
-              p regionId: 4,
-              p countryId: 27,
-              p createdAt: "2021-06-22T19:37:06.000Z",
-              p updatedAt: "2021-06-22T19:37:06.000Z"
-              p }
-              p }
-              p ]
-              p },
+              div(class="indent")
+                p {
+                div(class="indent2")
+                  p id: 3,
+                  p name: "Mexico",
+                  p capital: "Mexico City",
+                  p city: "Mexico City",
+                  p area: "761,606",
+                  p population: "127.6M",
+                  p gdp: "1.27T",
+                  p topExport: "Automobiles",
+                  p currency: "Mexican Peso",
+                  p leader: "Andrés Manuel López Obrador",
+                  p flag: "mx-flag.gif"
+                  p "CreatedAt": "2021-05-00T00:00:00.0000"
+                  p "UpdatedAt": "2021-05-00T00:00:00.0000"
+                  p regions: [
+                  p(id="inner-brace") {
+                  div(class="indent3")
+                    p id: 1,
+                    p region: "North America",
+                    p createdAt: "2021-05-00T00:00:00.0000"
+                    p updatedAt: "2021-05-00T00:00:00.0000"
+                    p regionsCountries: {
+                    div(class="indent4")
+                      p regionId: 1,
+                      p countryId: 3,
+                      p createdAt: "2021-05-00T00:00:00.0000"
+                      p updatedAt: "2021-05-00T00:00:00.0000"
+                  div(class="indent3")
+                    p }
+                  p(id="inner-brace2") }
+                p(id="inner-brace3") ]
+                p(id="inner-brace4") },
+                div(class="indent")
+                  p {
+                  div(class="indent2")
+                    p id: 27,
+                    p name: "Chile",
+                    p capital: "Santiago",
+                    p city: "Santiago",
+                    p area: "291,933",
+                    p population: "18.95M",
+                    p gdp: "282.3B",
+                    p topExport: "Copper ore",
+                    p currency: "Chilean peso",
+                    p leader: "Sebastián Piñera",
+                    p language: "Spanish",
+                    p flag: "ci-flag.gif",
+                    p createdAt: "2021-06-22T19:37:06.000Z",
+                    p updatedAt: "2021-06-22T19:37:06.000Z",
+                    p regions: [
+                    p(id="inner-brace5") {
+                    div(class="indent3")
+                      p id: 4,
+                      p region: "South America",
+                      p createdAt: "2021-06-22T19:37:06.000Z",
+                      p updatedAt: "2021-06-22T19:37:06.000Z",
+                      p regionsCountries: {
+                      div(class="indent4")
+                        p regionId: 4,
+                        p countryId: 27,
+                        p createdAt: "2021-06-22T19:37:06.000Z",
+                        p updatedAt: "2021-06-22T19:37:06.000Z"
+                  div(class="indent3")
+                    p }
+                  p(id="inner-brace6") }
+                p(id="inner-brace7") ]
+                p(id="inner-brace8") },
           article(class="documentation1")
             section(class="doc-section1")
               p(class="sub-heading") Method

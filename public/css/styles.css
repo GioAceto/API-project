@@ -281,3 +281,39 @@ footer {
   background-color: black;
   height: 4rem;
 }
+
+.indent > p {
+  margin-left: 2rem;
+}
+
+.indent2 > p {
+  margin-left: 3rem;
+}
+
+.indent3 {
+  margin-left: 7rem;
+}
+
+.indent4 {
+  margin-left: 2rem;
+}
+
+.indent5 {
+  margin-left: 5rem;
+}
+
+#inner-brace,
+#inner-brace5,
+#inner-brace2,
+#inner-brace6 {
+  margin-left: 5rem;
+}
+
+#inner-brace3,
+#inner-brace7 {
+  margin-left: 3rem;
+}
+
+#inner-brace4 {
+  margin-left: 2rem;
+}
