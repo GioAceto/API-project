@@ -10,7 +10,10 @@ const getMain = (req, res) => {
 
 const getAllCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
-    include: [{ model: models.Regions }]
+    order: [['name', 'ASC']],
+    include: [{
+      model: models.Regions
+    }]
   })
 
   return res.send(countries)
@@ -25,6 +28,7 @@ const getCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{ model: models.Regions }]
   })
 
@@ -35,6 +39,7 @@ const getCountryByName = async (req, res) => {
 const getCountryByRegionId = async (req, res) => {
   const { id } = req.params
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [
       {
         model: models.Regions,
@@ -47,6 +52,7 @@ const getCountryByRegionId = async (req, res) => {
 
 const renderAllCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [
       {
         model: models.Regions
@@ -59,6 +65,7 @@ const renderAllCountries = async (req, res) => {
 
 const renderNACountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'North America' }
@@ -70,6 +77,7 @@ const renderNACountries = async (req, res) => {
 
 const renderCACountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Central America' }
@@ -81,6 +89,7 @@ const renderCACountries = async (req, res) => {
 
 const renderCRCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Caribbean' }
@@ -92,6 +101,7 @@ const renderCRCountries = async (req, res) => {
 
 const renderSACountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'South America' }
@@ -103,6 +113,7 @@ const renderSACountries = async (req, res) => {
 
 const renderEUCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Europe' }
@@ -114,9 +125,10 @@ const renderEUCountries = async (req, res) => {
 
 const renderMECountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
-      where: { region: 'Middle_East' }
+      where: { region: 'Middle East' }
     }]
   })
 
@@ -125,6 +137,7 @@ const renderMECountries = async (req, res) => {
 
 const renderAFCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Africa' }
@@ -136,6 +149,7 @@ const renderAFCountries = async (req, res) => {
 
 const renderASCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Asia' }
@@ -147,6 +161,7 @@ const renderASCountries = async (req, res) => {
 
 const renderOCCountries = async (req, res) => {
   const countries = await models.Countries.findAll({
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Oceania' }
@@ -165,6 +180,7 @@ const renderCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{ model: models.Regions }]
   })
 
@@ -181,6 +197,7 @@ const renderNACountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'North America' }
@@ -200,6 +217,7 @@ const renderCACountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Central America' }
@@ -219,6 +237,7 @@ const renderCRCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Caribbean' }
@@ -238,6 +257,7 @@ const renderSACountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'South America' }
@@ -257,6 +277,7 @@ const renderEUCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Europe' }
@@ -276,6 +297,7 @@ const renderMECountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Middle East' }
@@ -295,6 +317,7 @@ const renderAFCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Africa' }
@@ -314,6 +337,7 @@ const renderASCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Asia' }
@@ -333,6 +357,7 @@ const renderOCCountryByName = async (req, res) => {
         { name: { [models.Sequelize.Op.like]: `%${name}%` } },
       ]
     },
+    order: [['name', 'ASC']],
     include: [{
       model: models.Regions,
       where: { region: 'Oceania' }

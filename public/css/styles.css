@@ -263,11 +263,14 @@ td:first-child {
 }
 
 .flag-column {
-  width: 400px;
+  text-align: center;
+  width: 380px;
+  height: 220px;
 }
 
 .flag {
-  width: 400px;
+  max-width: 380px;
+  max-height: 220px;
 }
 
 #post-req p {
@@ -277,4 +280,40 @@ margin: 0 0 0rem 1rem;
 footer {
   background-color: black;
   height: 4rem;
+}
+
+.indent > p {
+  margin-left: 2rem;
+}
+
+.indent2 > p {
+  margin-left: 3rem;
+}
+
+.indent3 {
+  margin-left: 7rem;
+}
+
+.indent4 {
+  margin-left: 2rem;
+}
+
+.indent5 {
+  margin-left: 5rem;
+}
+
+#inner-brace,
+#inner-brace5,
+#inner-brace2,
+#inner-brace6 {
+  margin-left: 5rem;
+}
+
+#inner-brace3,
+#inner-brace7 {
+  margin-left: 3rem;
+}
+
+#inner-brace4 {
+  margin-left: 2rem;
 }
