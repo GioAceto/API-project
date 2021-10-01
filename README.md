@@ -29,7 +29,7 @@ The database contains a 2 data tables and a linking table. The application uses 
 
 The frontend of the application utilizes the Pug template-engine as well CSS for styling. All images used are stored in the public/images folder of the repo.
 
-![Screenshot of countries api](public/images/countries-api.png)
+![Screenshot of countries api](public/images/countriesMap.jpg)
 
 ## API Documentation
 
