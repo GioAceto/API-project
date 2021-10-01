@@ -1,15 +1,89 @@
-# API-project
+# Countries API
 
-Portfolio Project
+## Objective
+The objective of this project was to create a REST API that returns information for all countries in the world, by their geographic region. There are 9 geographic regions used in this API. Each of which are given an ID # in the database:
 
-You will be building a working API and front-end. This is part 2 of 2.
-Continuing in your API project repo, in a branch called part-two-answer, you will be creating the API back-end to go along with your front-end you've already built.
-Your back-end should have at least the following routes 
-GET to retrieve all records
-GET to retrieve a particular record
-POST for creating a new record
-Your back-end should be supported by a test suite with tests for each controller, store data in a database, and utilize migrations for database management
-Be sure to make sure your front-end documentation matches your back-end implementation
-Your first progress check with your instructor will be the week of 5/26/2021
-You should push all progress to GitHub prior to your meeting with the instructor
-Your graded submission for this part will be due on 6/22/2021 before class
+1 - North America
+
+2 - Central America
+
+3 - Caribbean
+
+4 - South America
+
+5 - Europe
+
+6 - Africa
+
+7 - Middle East
+
+8 - Asia
+
+9 - Oceania
+
+
+## Structure & Functionality
+This API utilizes a MySQL database to store the country data, as well as a Pug frontend for the rendering.
+
+The database contains a 2 data tables and a linking table. The application uses the Sequelize ORM to connect to the database and it is then parsed into JSON format.
+
+The frontend of the application utilizes the Pug template-engine as well CSS for styling. All images used are stored in the public/images folder of the repo.
+
+![Screenshot of countries api](public/images/countries-api.png)
+
+## API Documentation
+
+The following HTTP methods are implemented: GET & POST.
+
+#### GET METHOD
+
+http://localhost:1400/api/countries
+
+GET - Returns a list in raw JSON of all countries and their information currently in the database in Alphabetical order.
+
+    {
+
+    },
+    
+http://localhost:1400/api/countries/:name
+    
+GET - Returns a specific country or list of all countries and their information cirrently in the database by fuzzy match params in raw JSON.
+
+    {
+
+    },
+    
+http://localhost:1400/api/region/:id
+    
+GET - Returns a list of countries in raw JSON by their region ID #.
+
+    {
+
+    },
+
+#### POST METHOD
+
+http://localhost:1400/api/countries
+
+POST - Adds a new student to the database. A new Student ID is created in sequential order.
+
+    {
+
+    }
+
+## To View the Frontend
+
+Main Route
+http://localhost:1400/
+
+View All Countries
+http://localhost:1400/countries
+
+View a Specific Country From All Countries with Fuzzy Match Params
+http://localhost:1400/countries/:name
+
+View All Countries From a Specific Region
+http://localhost:1400/region/north_america
+
+View a Specific Country From a Specific Region with Fuzzy Match Params
+http://localhost:1400/region/north_america/:name
