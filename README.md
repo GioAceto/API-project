@@ -1,6 +1,8 @@
 # Countries API
 
-Note: API routes can be testd with an API tester such as Postman.
+### [Demo this application](https://countries-of-the-world-api.herokuapp.com/)
+
+Note: API routes can be tested with an API tester such as Postman.
 
 ## Objective
 The objective of this project was to create a REST API that returns information for all countries in the world, by their geographic region. There are 9 geographic regions used in this API. Each of which are given a region ID # in the database:
