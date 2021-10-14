@@ -77,6 +77,6 @@ app.get('*', errorFunction)
 
 app.post('/api/countries', bodyParser.json(), addNewCountry)
 
-app.listen(PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}`) // eslint-disable-line no-console
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`App listening on http://localhost:${PORT}`) // eslint-disable-line no-console
 })
